@@ -1,14 +1,11 @@
 {
-  "/api/themeOptions/route": "app/api/themeOptions/route.js",
   "/api/home/paris/route": "app/api/home/paris/route.js",
   "/api/currency/route": "app/api/currency/route.js",
   "/api/settings/route": "app/api/settings/route.js",
   "/api/category/route": "app/api/category/route.js",
   "/api/blog/route": "app/api/blog/route.js",
   "/api/self/route": "app/api/self/route.js",
+  "/api/themeOptions/route": "app/api/themeOptions/route.js",
   "/api/product/route": "app/api/product/route.js",
-  "/api/home/osaka/route": "app/api/home/osaka/route.js",
-  "/[lng]/(mainLayout)/theme/paris/page": "app/[lng]/(mainLayout)/theme/paris/page.js",
-  "/[lng]/(mainLayout)/theme/tokyo/page": "app/[lng]/(mainLayout)/theme/tokyo/page.js",
-  "/[lng]/(mainLayout)/theme/osaka/page": "app/[lng]/(mainLayout)/theme/osaka/page.js"
+  "/[lng]/(mainLayout)/theme/paris/page": "app/[lng]/(mainLayout)/theme/paris/page.js"
 }

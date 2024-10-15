@@ -15,16 +15,6 @@
       "static/chunks/main-app.js",
       "static/css/app/[lng]/layout.css",
       "static/chunks/app/[lng]/layout.js"
-    ],
-    "/[lng]/(mainLayout)/theme/tokyo/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(mainLayout)/theme/tokyo/page.js"
-    ],
-    "/[lng]/(mainLayout)/theme/osaka/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(mainLayout)/theme/osaka/page.js"
     ]
   }
 }
