@@ -1,2 +1,4 @@
 documentation
 theme-files
+node_modules
+.next

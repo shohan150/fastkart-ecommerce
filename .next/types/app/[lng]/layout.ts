@@ -1,4 +1,4 @@
-// File: C:\Users\Acer\Downloads\themeforest-kXqSPrXP-fastkart-react-ecommerce-template-with-next-js\Fastkart_Nextjs_Template\frontend template\frontend template\src\app\[lng]\layout.js
+// File: D:\projects\fastkart\src\app\[lng]\layout.js
 import * as entry from '../../../../src/app/[lng]/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
