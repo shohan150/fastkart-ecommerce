@@ -1,6 +1,6 @@
-import ParisTheme from '@/Components/ParisTheme'
+import FastKart from "@/Components/OsakaTheme"
 const Home = () => {
-    return <ParisTheme />
+    return <FastKart />
 }
 
 export default Home

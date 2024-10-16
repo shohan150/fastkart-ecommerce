@@ -1,26 +1,26 @@
 'use client';
-import { useContext, useEffect } from 'react';
-import { Col, Row } from 'reactstrap';
-import { useQuery } from '@tanstack/react-query';
+import ProductIdsContext from '@/Helper/ProductIdsContext';
+import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
+import Loader from '@/Layout/Loader';
+import StickyCart from '@/Layout/StickyCart';
 import request from '@/Utils/AxiosUtils';
 import { HomePageAPI } from '@/Utils/AxiosUtils/API';
-import HomeBannerOsaka from './HomeBannerOsaka';
-import BannerSection from './BannerSection';
+import { useQuery } from '@tanstack/react-query';
+import { useContext, useEffect } from 'react';
+import { Col, Row } from 'reactstrap';
+import { osakaCategoryOption, osakaFeatureBlogOption } from '../../../Data/SliderSettingsData';
+import { LeafSVG } from '../Common/CommonSVG';
+import CustomHeading from '../Common/CustomHeading';
+import WrapperComponent from '../Common/WrapperComponent';
+import FeatureBlog from '../ParisTheme/FeatureBlog';
+import NewsLetter from '../ParisTheme/NewsLetter';
 import ProductSection2 from '../ParisTheme/ProductSections/ProductSection2';
 import TopSelling from '../TokyoTheme/TopSelling';
-import NewsLetter from '../ParisTheme/NewsLetter';
-import FeatureBlog from '../ParisTheme/FeatureBlog';
-import CustomHeading from '../Common/CustomHeading';
-import { osakaCategoryOption, osakaFeatureBlogOption } from '../../../Data/SliderSettingsData';
+import BannerSection from './BannerSection';
+import HomeBannerOsaka from './HomeBannerOsaka';
 import MiddleContent from './MiddleContent';
-import WrapperComponent from '../Common/WrapperComponent';
-import { LeafSVG } from '../Common/CommonSVG';
-import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
-import StickyCart from '@/Layout/StickyCart';
-import ProductIdsContext from '@/Helper/ProductIdsContext';
-import Loader from '@/Layout/Loader';
 
-const OsakaTheme = () => {
+const FastKart = () => {
   const { themeOption } = useContext(ThemeOptionContext);
   const { setGetProductIds, isLoading: productLoader } = useContext(ProductIdsContext);
   const { data, isLoading, refetch, fetchStatus } = useQuery(['osaka'], () => request({ url: `${HomePageAPI}/osaka` }), {
@@ -82,4 +82,4 @@ const OsakaTheme = () => {
   );
 };
 
-export default OsakaTheme;
+export default FastKart;
