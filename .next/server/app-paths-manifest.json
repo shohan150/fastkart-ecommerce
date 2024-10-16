@@ -1,12 +1,1 @@
-{
-  "/api/self/route": "app/api/self/route.js",
-  "/api/home/osaka/route": "app/api/home/osaka/route.js",
-  "/api/currency/route": "app/api/currency/route.js",
-  "/api/category/route": "app/api/category/route.js",
-  "/api/settings/route": "app/api/settings/route.js",
-  "/api/blog/route": "app/api/blog/route.js",
-  "/api/themeOptions/route": "app/api/themeOptions/route.js",
-  "/api/product/route": "app/api/product/route.js",
-  "/[lng]/(mainLayout)/home/page": "app/[lng]/(mainLayout)/home/page.js",
-  "/[lng]/(mainLayout)/theme/paris/page": "app/[lng]/(mainLayout)/theme/paris/page.js"
-}
+{}
