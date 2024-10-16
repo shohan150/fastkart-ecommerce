@@ -1,33 +1,36 @@
 'use client';
-import { useContext, useEffect } from 'react';
-import { Col, Row } from 'reactstrap';
-import { useQuery } from '@tanstack/react-query';
+import ProductIdsContext from '@/Helper/ProductIdsContext';
+import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
+import Loader from '@/Layout/Loader';
+import StickyCart from '@/Layout/StickyCart';
 import request from '@/Utils/AxiosUtils';
 import { HomePageAPI } from '@/Utils/AxiosUtils/API';
-import HomeBannerOsaka from './HomeBannerOsaka';
-import BannerSection from './BannerSection';
+import { useQuery } from '@tanstack/react-query';
+import { useContext, useEffect } from 'react';
+import { Col, Row } from 'reactstrap';
+import { osakaCategoryOption, osakaFeatureBlogOption } from '../../../Data/SliderSettingsData';
+import { LeafSVG } from '../Common/CommonSVG';
+import CustomHeading from '../Common/CustomHeading';
+import WrapperComponent from '../Common/WrapperComponent';
+import FeatureBlog from '../ParisTheme/FeatureBlog';
+import NewsLetter from '../ParisTheme/NewsLetter';
 import ProductSection2 from '../ParisTheme/ProductSections/ProductSection2';
 import TopSelling from '../TokyoTheme/TopSelling';
-import NewsLetter from '../ParisTheme/NewsLetter';
-import FeatureBlog from '../ParisTheme/FeatureBlog';
-import CustomHeading from '../Common/CustomHeading';
-import { osakaCategoryOption, osakaFeatureBlogOption } from '../../../Data/SliderSettingsData';
+import BannerSection from './BannerSection';
+import HomeBannerOsaka from './HomeBannerOsaka';
 import MiddleContent from './MiddleContent';
-import WrapperComponent from '../Common/WrapperComponent';
-import { LeafSVG } from '../Common/CommonSVG';
-import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
-import StickyCart from '@/Layout/StickyCart';
-import ProductIdsContext from '@/Helper/ProductIdsContext';
-import Loader from '@/Layout/Loader';
 
-const OsakaTheme = () => {
+const FastKart = () => {
   const { themeOption } = useContext(ThemeOptionContext);
-  const { setGetProductIds, isLoading: productLoader } = useContext(ProductIdsContext);
-  const { data, isLoading, refetch, fetchStatus } = useQuery(['osaka'], () => request({ url: `${HomePageAPI}/osaka` }), {
+  const { getProductIds, setGetProductIds, isLoading: productLoader } = useContext(ProductIdsContext);
+
+  const { data, isLoading, refetch, fetchStatus } = useQuery(['fastkart'], () => request({ url: `${HomePageAPI}/fastkart` }), {
     enabled: false,
     refetchOnWindowFocus: false,
     select: (res) => res?.data,
   });
+
+  // fetch data after mount
   useEffect(() => {
     refetch();
   }, []);
@@ -39,10 +42,12 @@ const OsakaTheme = () => {
       document.body.classList.remove('skeleton-body');
     }
 
+    //from the fetched data we get an array of product_ids ( [1, 2, 2, 3]). From that we are creating a Set so that we can get unique values; ensuring no repetitions ({1,2,3}), then convert the set back into array ([1,2,3]).concatenates all the elements of the array into a single string ("1,2,3"), comma separated. Then pass the string it to the ids property in the setGetProductIds setter function.
     if (data?.content?.products_ids?.length > 0) {
       setGetProductIds({ ids: Array.from(new Set(data?.content?.products_ids))?.join(',') });
     }
   }, [fetchStatus == 'fetching', !isLoading]);
+  
   if (isLoading) return <Loader />;
   return (
     <>
@@ -82,4 +87,4 @@ const OsakaTheme = () => {
   );
 };
 
-export default OsakaTheme;
+export default FastKart;

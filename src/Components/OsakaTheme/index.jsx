@@ -20,7 +20,7 @@ import BannerSection from './BannerSection';
 import HomeBannerOsaka from './HomeBannerOsaka';
 import MiddleContent from './MiddleContent';
 
-const FastKart = () => {
+const OsakaTheme = () => {
   const { themeOption } = useContext(ThemeOptionContext);
   const { setGetProductIds, isLoading: productLoader } = useContext(ProductIdsContext);
   const { data, isLoading, refetch, fetchStatus } = useQuery(['osaka'], () => request({ url: `${HomePageAPI}/osaka` }), {
@@ -82,5 +82,4 @@ const FastKart = () => {
   );
 };
 
-export default FastKart;
-// test
+export default OsakaTheme;
