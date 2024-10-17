@@ -1,12 +1,13 @@
-import React, { useContext, useEffect, useRef } from 'react';
-import { Col, Row } from 'reactstrap';
-import TopbarLeft from './TopbarLeft';
-import TopbarSlider from './TopbarSlider';
-import TopLanguage from './TopLanguage';
-import HeaderCurrency from './HeaderCurrency';
+import I18NextContext from '@/Helper/I18NextContext';
 import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
 import { usePathname } from 'next/navigation';
-import I18NextContext from '@/Helper/I18NextContext';
+import { useContext, useEffect, useRef } from 'react';
+import { Col, Row } from 'reactstrap';
+// import HeaderCurrency from './HeaderCurrency';
+import Link from 'next/link';
+import TopbarLeft from './TopbarLeft';
+import TopbarSlider from './TopbarSlider';
+// import TopLanguage from './TopLanguage';
 
 const HeaderTopBar = () => {
   const { i18Lang } = useContext(I18NextContext);
@@ -30,13 +31,24 @@ const HeaderTopBar = () => {
           <TopbarSlider />
           <Col lg={3}>
             <ul className='about-list right-nav-about'>
-              <li className='right-nav-list'>
+              {/* <li className='right-nav-list'>
                 <TopLanguage />
               </li>
               <li className='right-nav-list'>
                 <HeaderCurrency />
-              </li>
+              </li> */}
+              <li className='right-nav-list'>
+                <Link href={`/${i18Lang}/all-products`} className='text-white'>
+                  All Products
+                </Link>
+              </li> 
+              <li className='right-nav-list'>
+                <Link href={`/${i18Lang}/all-offers`} className='text-white'>
+                  All Offers
+                </Link>
+              </li> 
             </ul>
+
           </Col>
         </Row>
       </div>

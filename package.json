@@ -33,6 +33,7 @@
     "reactstrap": "^9.2.0",
     "remixicon": "^3.5.0",
     "sass": "^1.63.4",
+    "sharp": "^0.33.5",
     "slick-carousel": "^1.8.1",
     "yup": "^0.32.11"
   }

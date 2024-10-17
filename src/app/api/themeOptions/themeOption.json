@@ -59,7 +59,7 @@
     },
     "header": {
       "sticky_header_enable": true,
-      "header_options": "basic_header",
+      "header_options": "fastkart_header",
       "page_top_bar_enable": true,
       "top_bar_content": [
         {
@@ -69,26 +69,13 @@
           "content": "Something you love is now on sale <strong>Buy Now!</strong>"
         },
         {
-          "content": "Your must-have item is calling – <strong>Buy Now!</strong>"
+          "content": "Your must-have item is calling . Have a quick look– <strong>Buy Now!</strong>"
         }
       ],
       "page_top_bar_dark": false,
       "support_number": "+1-555-186-5359",
-      "today_deals": [
-        1,
-        12,
-        8
-      ],
-      "category_ids": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
+      "today_deals": [1, 12, 8],
+      "category_ids": [1, 2, 3, 4, 5, 6, 7, 8]
     },
     "footer": {
       "footer_style": "light_mode",
@@ -97,14 +84,7 @@
       "footer_about": "Discover convenience redefined at our multipurpose store. From fresh groceries to the latest fashion trends, find everything you need under one roof. Your one-stop shopping destination for a diverse range of products.",
       "about_address": "1418 Riverwood Drive, CA 96052, US",
       "about_email": "support@fastkart.com",
-      "footer_categories": [
-        6,
-        5,
-        4,
-        3,
-        2,
-        1
-      ],
+      "footer_categories": [6, 5, 4, 3, 2, 1],
       "help_center": [
         {
           "label": "My Account",
@@ -202,7 +182,7 @@
         "description": "Ready to showcase your products to the world? Join our dynamic marketplace and become a seller at our thriving multipurpose store. With a diverse customer base and a wide range of categories including groceries, fashion, electronics, and more, you'll have the perfect platform to reach a vast audience.\n\nAs a seller, you'll benefit from our user-friendly interface, seamless payment processing, and dedicated support to ensure your products shine. Whether you're a local artisan or a growing brand, our store provides the visibility and tools you need to succeed.\n\nTap into our established customer traffic, set up your shop with ease, and let your products take center stage. Join us in creating a shopping experience that caters to every need and taste. Your journey to success starts here – become a seller at our multipurpose store today!",
         "image_url": "https://react.pixelstrap.net/fastkart/assets/banner-2.jpg"
       },
-      "services": { 
+      "services": {
         "status": true,
         "service_1": {
           "title": "Lowest Cost",
