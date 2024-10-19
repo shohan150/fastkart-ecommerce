@@ -2,7 +2,7 @@
      Home scss
 ==========================**/
 .bg-effect {
-  background-image: url('../../images/bg-body.png');
+  background-image: url("../../images/bg-body.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -29,7 +29,7 @@
       }
     }
 
-    &>.home-top {
+    & > .home-top {
       margin-top: -100px;
 
       @include mq-max(sm) {
@@ -42,7 +42,9 @@
     }
 
     &.home-p-sm {
-      padding: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))) !important;
+      padding: calc(
+        15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))
+      ) !important;
     }
 
     &.home-p-medium {
@@ -91,7 +93,7 @@
           position: relative;
 
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;
@@ -207,9 +209,14 @@
 
       span {
         font-weight: 500;
-        padding: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320))) calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)))
+          calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));
         background: $black;
-        background: linear-gradient(90deg, rgba(255, 114, 114, 0.15) 0%, rgba(255, 114, 114, 0) 79%);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 114, 114, 0.15) 0%,
+          rgba(255, 114, 114, 0) 79%
+        );
         border-radius: 50px;
         color: $danger-color;
         margin-left: calc(2px + (9 - 2) * ((100vw - 320px) / (1920 - 320)));
@@ -300,7 +307,9 @@
       padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
 
       &.home-p-sm {
-        padding: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320))) !important;
+        padding: calc(
+          15px + (30 - 15) * ((100vw - 320px) / (1920 - 320))
+        ) !important;
       }
 
       h1 {
@@ -384,7 +393,7 @@
 
         &:before {
           @include mq-max(2xs) {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -407,7 +416,8 @@
 
     &.home-small {
       .home-detail {
-        padding: calc(20px + (50 - 20) * ((100vw - 767px) / (1920 - 767))) calc(12px + (50 - 12) * ((100vw - 767px) / (1920 - 767)));
+        padding: calc(20px + (50 - 20) * ((100vw - 767px) / (1920 - 767)))
+          calc(12px + (50 - 12) * ((100vw - 767px) / (1920 - 767)));
 
         h4 {
           font-size: calc(14px + (22 - 14) * ((100vw - 767px) / (1920 - 767)));
@@ -418,7 +428,21 @@
 }
 
 .home-search {
-  background-image: linear-gradient(to right top, #0da487, #06a188, #019e88, #009a89, #009789, #009489, #009089, #008d89, #008a89, #008688, #008387, #007f86);
+  background-image: linear-gradient(
+    to right top,
+    #0da487,
+    #06a188,
+    #019e88,
+    #009a89,
+    #009789,
+    #009489,
+    #009089,
+    #008d89,
+    #008a89,
+    #008688,
+    #008387,
+    #007f86
+  );
   padding-top: 0;
 
   .home-search-content {
@@ -430,7 +454,7 @@
     width: 100%;
     padding-bottom: 70px;
 
-    >div {
+    > div {
       width: 100%;
     }
 
@@ -515,7 +539,9 @@
 
       .web-logo {
         display: block;
-        margin-bottom: calc(34px + (40 - 34) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: calc(
+          34px + (40 - 34) * ((100vw - 320px) / (1920 - 320))
+        );
 
         img {
           width: calc(53% + (70 - 53) * ((100vw - 320px) / (1920 - 320)));
@@ -534,7 +560,9 @@
             }
 
             h5 {
-              font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+              font-size: calc(
+                15px + (17 - 15) * ((100vw - 320px) / (1920 - 320))
+              );
             }
           }
         }
@@ -579,7 +607,7 @@
         padding: 48px 15px 0;
       }
 
-      >div {
+      > div {
         width: 50%;
 
         @include mq-max(lg) {
@@ -678,7 +706,7 @@
 
     &::before {
       @include mq-max(md) {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;

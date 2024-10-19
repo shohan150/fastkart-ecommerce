@@ -2,7 +2,7 @@ import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
 import { useHeaderScroll } from '@/Utils/HeaderScroll';
 import { useContext } from 'react';
 import { Col, Row } from 'reactstrap';
-import HeaderCategory from './Common/HeaderCategory';
+// import HeaderCategory from './Common/HeaderCategory';
 import HeaderLogo from './Common/HeaderLogo';
 import HeaderSearchBar from './Common/HeaderSearchBar';
 import HeaderTopBar from './Common/HeaderTopBar';
@@ -30,11 +30,11 @@ const FastkartHeader = () => {
         </div>
       </div>
 
-      <div className='container-fluid-lg'>
+      {/* <div className='container-fluid-lg'>
         <Row>
           <HeaderCategory />
         </Row>
-      </div>
+      </div> */}
     </header>
   );
 };

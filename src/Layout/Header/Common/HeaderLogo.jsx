@@ -1,15 +1,12 @@
 'use client';
-import React, { useContext, useEffect, useState } from 'react';
-import Btn from '@/Elements/Buttons/Btn';
-import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
 import Avatar from '@/Components/Common/Avatar';
-import Link from 'next/link';
-import logoImage from '../../../../public/assets/images/logo/1.png';
-import { RiMenuLine } from 'react-icons/ri';
-import { usePathname } from 'next/navigation';
 import I18NextContext from '@/Helper/I18NextContext';
+import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
 import { useTranslation } from '@/app/i18n/client';
-import ParisLogo from '../../../../public/assets/images/logo/1.png';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useContext, useEffect, useState } from 'react';
+import { default as logoImage, default as ParisLogo } from '../../../../public/assets/images/logo/1.png';
 import TokyoLogo from '../../../../public/assets/images/logo/2.png';
 import RomeLogo from '../../../../public/assets/images/logo/3.png';
 import MadridLogo from '../../../../public/assets/images/logo/4.png';
@@ -40,11 +37,11 @@ const HeaderLogo = () => {
   }, [pathName, i18Lang, themeOption?.logo?.header_logo]);
   return (
     <>
-      <Btn className='navbar-toggler d-xl-none d-inline navbar-menu-button me-2' type='button'>
+      {/* <Btn className='navbar-toggler d-xl-none d-inline navbar-menu-button me-2' type='button'>
         <span className='navbar-toggler-icon' onClick={() => setMobileSideBar(!mobileSideBar)}>
           <RiMenuLine />
         </span>
-      </Btn>
+      </Btn> */}
       <Link href='/' className='web-logo nav-logo'>
         <Avatar data={logo} placeHolder={logoImage} name={'Header'} customImageClass={'img-fluid'} height={28} width={162} />
       </Link>

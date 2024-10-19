@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { RiCloseLine } from 'react-icons/ri';
-import { Media } from 'reactstrap';
+import I18NextContext from '@/Helper/I18NextContext';
+import ProductIdsContext from '@/Helper/ProductIdsContext';
+import { useTranslation } from '@/app/i18n/client';
 import Image from 'next/image';
 import Link from 'next/link';
-import ProductIdsContext from '@/Helper/ProductIdsContext';
-import I18NextContext from '@/Helper/I18NextContext';
-import { useTranslation } from '@/app/i18n/client';
+import { useContext, useEffect, useState } from 'react';
+import { RiCloseLine } from 'react-icons/ri';
+import { Media } from 'reactstrap';
 import { placeHolderImage } from '../../../Data/CommonPath';
 
 const RecentPurchase = () => {
@@ -29,7 +29,8 @@ const RecentPurchase = () => {
         setTimeout(() => {
           setShow((prev) => !prev);
         }, 5000);
-      }, 20000);
+      }, Math.floor(Math.random() * 120000) + 45000);
+      // min 45sec plus 0 to 2 minutes
     }
 
     return () => {

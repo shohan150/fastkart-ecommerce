@@ -1,10 +1,9 @@
-import { useContext, useState } from 'react';
-import { Input, InputGroup } from 'reactstrap';
 import Btn from '@/Elements/Buttons/Btn';
 import I18NextContext from '@/Helper/I18NextContext';
 import { useRouter } from 'next/navigation';
+import { useContext, useState } from 'react';
 import { RiSearchLine } from 'react-icons/ri';
-import CategoryDropdown from './CategoryDropdown';
+import { Input, InputGroup } from 'reactstrap';
 
 const HeaderSearchBar = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -19,9 +18,9 @@ const HeaderSearchBar = () => {
   };
   return (
     <div className='middle-box'>
-      <div className='location-box'>
+      {/* <div className='location-box'>
         <CategoryDropdown />
-      </div>
+      </div> */}
       <div className='search-box'>
         <InputGroup>
           <Input type='search' className='form-control' placeholder="I'm searching for..." value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
