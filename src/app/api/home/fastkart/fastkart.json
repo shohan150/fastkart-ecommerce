@@ -3,19 +3,33 @@
   "content": {
     "home_banner": {
       "status": true,
+      "bg_image_url": "https://img.freepik.com/free-photo/top-view-background-beautiful-white-grey-brown-cream-blue-background_140725-72219.jpg",
       "main_banner": {
-        "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/osaka/1.jpg",
+        "image_url": "https://t3.ftcdn.net/jpg/06/55/48/22/360_F_655482254_1k1yrQACCvforJsBqcLgQgJAuoPSzg3X.jpg",
         "redirect_link": {
           "link": "vegetables-fruits",
           "link_type": "collection"
         }
       },
       "sub_banner_1": {
-        "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/osaka/2.jpg",
+        "image_url": "https://cdn.prod.website-files.com/602bfd3cc368c527f1c2a863/608950218c62faa8b72a2bcc_pink-qr-codes-for-apps-shop-windows.jpeg",
         "redirect_link": {
           "link": "vegetables-fruits",
-          "link_type": "collection",
-          "product_ids": "collection"
+          "link_type": "collection"
+        }
+      },
+      "sub_banner_2": {
+        "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/rome/3.jpg",
+        "redirect_link": {
+          "link": "vegetables-fruits",
+          "link_type": "collection"
+        }
+      },
+      "sub_banner_3": {
+        "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/rome/3.jpg",
+        "redirect_link": {
+          "link": "vegetables-fruits",
+          "link_type": "collection"
         }
       }
     },
@@ -26,8 +40,13 @@
       "category_ids": [1, 2, 3, 4, 5, 6, 7, 8, 10],
       "status": true
     },
+    "categories_image_list": {
+      "title": "Shop By Categories",
+      "category_ids": [1, 2, 22, 21, 20, 19, 18, 6],
+      "status": true
+    },
     "coupons": {
-      "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/osaka/4.jpg",
+      "image_url": "https://img.freepik.com/premium-vector/flash-sale-banner-template-design-web-social-media_39705-260.jpg",
       "redirect_link": {
         "link": "vegetables-fruits",
         "link_type": "collection"
@@ -35,24 +54,52 @@
       "status": true
     },
     "products_list_1": {
-      "title": "Fruits and Vegetables",
-      "description": "Farm-Fresh Goodness: A Variety of Fruits and Vegetables Awaits",
+      "title": "Flash Sale",
+      "description": "Good tech in cheap price",
       "status": true,
-      "product_ids": [19, 15, 8, 5, 6, 7]
+      "product_ids": [19, 15, 8, 5, 6, 7, 1, 2, 4, 5]
+    },
+    "product_with_deals": {
+      "title": "Top Selling Items",
+      "status": true,
+      "products_list": {
+        "title": "Top Selling Items",
+        "status": true,
+        "product_ids": [20, 2, 12, 17, 30, 45, 33, 22]
+      },
+      "deal_of_days": {
+        "title": "Special Offer",
+        "status": true,
+        "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/madrid/4.jpg",
+        "deals": [
+          {
+            "offer_title": "Special Offer",
+            "product_id": 12,
+            "end_date": "2023-09-30T20:53",
+            "status": true
+          },
+          {
+            "offer_title": "Special Offer",
+            "product_id": 2,
+            "end_date": "2023-09-01T16:57",
+            "status": true
+          },
+          {
+            "offer_title": "Special Offer",
+            "product_id": 18,
+            "end_date": "2025-06-30T15:53",
+            "status": true
+          }
+        ]
+      }
     },
     "offer_banner": {
-      "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/osaka/5.jpg",
+      "image_url": "https://img.freepik.com/free-vector/black-friday-horizontal-banner-with-red-brush-stroke-background_1361-3678.jpg?t=st=1729331977~exp=1729335577~hmac=177ed2fc25c5af92646cb37993717b886ea3279a35715ae8a5aeb41053743e0d&w=826",
       "redirect_link": {
         "link": "vegetables-fruits",
         "link_type": "collection"
       },
       "status": true
-    },
-    "products_list_2": {
-      "title": "Breakfast and Dairy",
-      "description": "Morning Delights: Breakfast and Dairy Choices to Start Your Day",
-      "status": true,
-      "product_ids": [45, 30, 21, 19, 8, 44, 41, 38, 36]
     },
     "product_bundles": {
       "status": true,

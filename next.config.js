@@ -37,7 +37,7 @@ module.exports = (phase) => {
 
     // specifies allowed domains for loading images.It allows images from react.pixelstrap.net and defines a remote pattern for images served over HTTPS from this domain.
     const images = {
-        domains: ["react.pixelstrap.net"],
+        domains: ["react.pixelstrap.net", "img.freepik.com"],
         remotePatterns: [
             {
                 protocol: "https",

@@ -1,28 +1,23 @@
-import React, { useContext } from 'react';
-import ProductSection1 from '../ParisTheme/ProductSections/ProductSection1';
-import OfferBanner from '../ParisTheme/OfferBanner';
-import DetailedBanner from './DetailedBanner';
-import WrapperComponent from '../Common/WrapperComponent';
-import { LeafSVG } from '../Common/CommonSVG';
 import ProductIdsContext from '@/Helper/ProductIdsContext';
-import { osakaFullSlider, osakaSliderOption } from '../../../Data/SliderSettingsData';
+import { useContext } from 'react';
+import WrapperComponent from '../Common/WrapperComponent';
+import OfferBanner from '../ParisTheme/OfferBanner';
+import BrandCategory from './BrandCategory';
+import DealProduct from './DealProducts';
+import DetailedBanner from './DetailedBanner';
+
+
 
 const MiddleContent = ({ dataAPI }) => {
   const { filteredProduct } = useContext(ProductIdsContext);
   return (
     <>
-      {dataAPI?.products_list_1?.status && dataAPI?.products_list_1?.product_ids.length > 0 && (
-        <WrapperComponent noRowCol={true}>
-          <ProductSection1
-            ProductData={filteredProduct}
-            svgUrl={<LeafSVG className='icon-width' />}
-            dataAPI={dataAPI?.products_list_1}
-            noCustomClass={true}
-            customSliderOption={osakaFullSlider}
-            classObj={{ productStyle: 'product-modern', productBoxClass: '' }}
-          />
-        </WrapperComponent>
-      )}
+      {dataAPI?.product_with_deals?.status && <DealProduct dataAPI={dataAPI?.product_with_deals} />}
+
+      {/* shop by category
+      {dataAPI?.categories_image_list?.status && <ShopCategory dataAPI={dataAPI?.categories_image_list} />} */}
+
+
 
       {dataAPI?.offer_banner?.status && (
         <WrapperComponent colProps={{ xs: 12 }}>
@@ -30,18 +25,8 @@ const MiddleContent = ({ dataAPI }) => {
         </WrapperComponent>
       )}
 
-      {dataAPI?.products_list_2?.status && dataAPI?.products_list_2?.product_ids.length > 0 && (
-        <WrapperComponent noRowCol={true}>
-          <ProductSection1
-            ProductData={filteredProduct}
-            svgUrl={<LeafSVG className='icon-width' />}
-            dataAPI={dataAPI?.products_list_2}
-            noCustomClass={true}
-            customSliderOption={osakaFullSlider}
-            classObj={{ productStyle: 'product-modern', productBoxClass: '' }}
-          />
-        </WrapperComponent>
-      )}
+            {/* shop by brands (madrid) */}
+            {dataAPI?.categories_image_list?.status && <BrandCategory dataAPI={dataAPI?.categories_image_list} />}
 
       {dataAPI?.product_bundles?.status && dataAPI?.product_bundles?.bundles?.length > 0 && (
         <WrapperComponent noRowCol={true}>

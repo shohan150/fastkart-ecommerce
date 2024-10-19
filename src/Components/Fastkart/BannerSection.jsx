@@ -1,5 +1,5 @@
-import SingleBanner from '../ParisTheme/SingleBanner';
 import WrapperComponent from '../Common/WrapperComponent';
+import SingleBanner from '../ParisTheme/SingleBanner';
 
 const BannerSection = ({ dataAPI }) => {
   return (

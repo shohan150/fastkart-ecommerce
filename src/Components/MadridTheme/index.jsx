@@ -1,21 +1,21 @@
 'use client';
-import { useContext, useEffect } from 'react';
-import { useQuery } from '@tanstack/react-query';
+import ProductIdsContext from '@/Helper/ProductIdsContext';
+import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
 import Loader from '@/Layout/Loader';
+import StickyCart from '@/Layout/StickyCart';
 import request from '@/Utils/AxiosUtils';
-import MadridHomeBanner from './MadridHomeBanner';
 import { HomePageAPI } from '@/Utils/AxiosUtils/API';
+import { useQuery } from '@tanstack/react-query';
+import { useContext, useEffect } from 'react';
+import { madridFullSlider } from '../../../Data/SliderSettingsData';
 import HomeBanner from '../ParisTheme/HomeBanner';
-import ShopCategory from './ShopCategory';
-import ProductWrapper from './ProductWrapper';
 import BankOfferBanner from './BankOfferBanner';
 import DealProduct from './DealProducts';
 import GiftBanner from './GiftBanner';
+import MadridHomeBanner from './MadridHomeBanner';
 import OtherSection from './OtherSection';
-import StickyCart from '@/Layout/StickyCart';
-import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
-import ProductIdsContext from '@/Helper/ProductIdsContext';
-import { madridFullSlider } from '../../../Data/SliderSettingsData';
+import ProductWrapper from './ProductWrapper';
+import ShopCategory from './ShopCategory';
 
 const MadridTheme = () => {
   const { themeOption } = useContext(ThemeOptionContext);

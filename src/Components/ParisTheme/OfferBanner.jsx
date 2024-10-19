@@ -1,8 +1,8 @@
-import { useContext } from 'react';
-import Link from 'next/link';
-import RatioImage from '@/Utils/RatioImage';
 import I18NextContext from '@/Helper/I18NextContext';
 import ProductIdsContext from '@/Helper/ProductIdsContext';
+import RatioImage from '@/Utils/RatioImage';
+import Link from 'next/link';
+import { useContext } from 'react';
 
 const OfferBanner = ({ classes = {}, imgUrl, ratioImage, customRatioClass = '', elem }) => {
   const { i18Lang } = useContext(I18NextContext);
