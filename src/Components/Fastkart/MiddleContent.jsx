@@ -14,11 +14,6 @@ const MiddleContent = ({ dataAPI }) => {
     <>
       {dataAPI?.product_with_deals?.status && <DealProduct dataAPI={dataAPI?.product_with_deals} />}
 
-      {/* shop by category
-      {dataAPI?.categories_image_list?.status && <ShopCategory dataAPI={dataAPI?.categories_image_list} />} */}
-
-
-
       {dataAPI?.offer_banner?.status && (
         <WrapperComponent colProps={{ xs: 12 }}>
           <OfferBanner classes={{ customHoverClass: 'offer-box hover-effect' }} imgUrl={dataAPI?.offer_banner?.image_url} elem={dataAPI?.offer_banner} />

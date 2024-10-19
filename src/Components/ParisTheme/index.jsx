@@ -1,16 +1,16 @@
 'use client';
-import React, { useContext, useEffect } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import TopBanner from './TopBanner';
-import HomeBanner from './HomeBanner';
-import ProductSection from './ProductSection';
-import { HomePageAPI } from '@/Utils/AxiosUtils/API';
-import request from '@/Utils/AxiosUtils';
-import NewsLetter from './NewsLetter';
-import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
-import StickyCart from '@/Layout/StickyCart';
 import ProductIdsContext from '@/Helper/ProductIdsContext';
+import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
 import Loader from '@/Layout/Loader';
+import StickyCart from '@/Layout/StickyCart';
+import request from '@/Utils/AxiosUtils';
+import { HomePageAPI } from '@/Utils/AxiosUtils/API';
+import { useQuery } from '@tanstack/react-query';
+import { useContext, useEffect } from 'react';
+import HomeBanner from './HomeBanner';
+import NewsLetter from './NewsLetter';
+import ProductSection from './ProductSection';
+import TopBanner from './TopBanner';
 
 const ParisTheme = () => {
   const { setGetProductIds, isLoading: productLoader } = useContext(ProductIdsContext);

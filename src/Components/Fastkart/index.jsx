@@ -9,6 +9,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useContext, useEffect } from 'react';
 import BannerSection from './BannerSection';
 import MiddleContent from './MiddleContent';
+import ProductSection from './ProductSection';
 import RomeHomeBanner from './RomeHomeBanner';
 
 const FastKart = () => {
@@ -49,7 +50,8 @@ const FastKart = () => {
 
       <MiddleContent dataAPI={data?.content} />
 
-  
+      <ProductSection dataAPI={data?.content} />
+
       {themeOption?.general?.sticky_cart_enable && themeOption?.general?.cart_style !== 'cart_sidebar' && <StickyCart />}
     </>
   );

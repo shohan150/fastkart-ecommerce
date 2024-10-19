@@ -1,11 +1,34 @@
-import ProductSection1 from '../ParisTheme/ProductSections/ProductSection1';
+import { Col } from 'reactstrap';
 import WrapperComponent from '../Common/WrapperComponent';
-import { LeafSVG } from '../Common/CommonSVG';
+import CategoryMenu from './CategoryMenu';
+import OfferBanner from './OfferBanner';
+import ProductCard from './ProductCard';
 
-const ProductSection = ({ ProductData, dataAPI }) => {
+const ProductSection = ({ dataAPI }) => {
+  const bannerOne = dataAPI?.main_content?.sidebar?.left_side_banners?.banner_1?.image_url;
+  const bannerTwo = dataAPI?.main_content?.sidebar?.left_side_banners?.banner_2?.image_url;
+
   return (
-    <WrapperComponent noRowCol={true}>
-      <ProductSection1 ProductData={ProductData} svgUrl={<LeafSVG className='icon-width' />} dataAPI={data?.content?.products_list_1} />
+    <WrapperComponent classes={{ sectionClass: 'product-section', row: 'g-sm-4 g-3' }} customCol={true}>
+      {/* left side content */}
+      {dataAPI?.main_content?.sidebar?.status && (
+        <Col xxl={3} xl={4} className='d-none d-xl-block'>
+          <div className='p-sticky'>
+            {dataAPI?.main_content?.sidebar?.categories_icon_list?.status && dataAPI?.main_content?.sidebar?.categories_icon_list.category_ids.length > 0 && <CategoryMenu dataAPI={dataAPI} />}
+
+            {dataAPI?.main_content?.sidebar?.left_side_banners?.status && (
+              <>
+                <OfferBanner classes={{ customClass: 'ratio_156 section-t-space' }} imgUrl={bannerOne} ratioImage={true} elem={dataAPI?.main_content?.sidebar?.left_side_banners?.banner_1} />
+                {/* <OfferBanner classes={{ customClass: 'ratio_medium section-t-space' }} imgUrl={bannerTwo} elem={dataAPI?.main_content?.sidebar?.left_side_banners?.banner_2} /> */}
+              </>
+            )}
+            {/* {dataAPI?.main_content?.sidebar?.sidebar_products?.status && dataAPI?.main_content?.sidebar?.sidebar_products?.product_ids.length > 0 && <TrendingProduct dataAPI={dataAPI} />} */}
+          </div>
+        </Col>
+      )}
+
+      {/* right side content */}
+      <ProductCard dataAPI={dataAPI} />
     </WrapperComponent>
   );
 };
