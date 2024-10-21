@@ -1,8 +1,8 @@
-import { useContext } from 'react';
 import { LeafSVG } from '@/Components/Common/CommonSVG';
 import WrapperComponent from '@/Components/Common/WrapperComponent';
 import ProductSection1 from '@/Components/ParisTheme/ProductSections/ProductSection1';
 import ProductIdsContext from '@/Helper/ProductIdsContext';
+import { useContext } from 'react';
 import { productPageRelatedSliderOptions } from '../../../../Data/SliderSettingsData';
 
 const RelatedProduct = ({ productState }) => {

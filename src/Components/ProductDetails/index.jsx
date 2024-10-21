@@ -1,19 +1,19 @@
 'use client';
-import { useContext, useEffect, useMemo, useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
+import ProductIdsContext from '@/Helper/ProductIdsContext';
+import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
 import Loader from '@/Layout/Loader';
 import request from '@/Utils/AxiosUtils';
 import { ProductAPI } from '@/Utils/AxiosUtils/API';
+import { useQuery } from '@tanstack/react-query';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useContext, useEffect, useMemo, useState } from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
-import Product4Image from './Product4Image';
 import RelatedProduct from './Common/RelatedProduct';
-import ProductThumbnail from './ProductThumbnail';
+import StickyCheckout from './Common/StickyCheckout';
+import Product4Image from './Product4Image';
 import ProductSlider from './ProductSlider';
 import ProductSticky from './ProductSticky';
-import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
-import { useRouter, useSearchParams } from 'next/navigation';
-import ProductIdsContext from '@/Helper/ProductIdsContext';
-import StickyCheckout from './Common/StickyCheckout';
+import ProductThumbnail from './ProductThumbnail';
 
 const ProductDetailContent = ({ params }) => {
   const router = useRouter();
@@ -84,7 +84,8 @@ const ProductDetailContent = ({ params }) => {
     <>
       <Breadcrumb title={params} subNavigation={[{ name: 'Product' }, { name: params }]} />
       {showProductLayout[isProductLayout]}
-      {productState?.product?.related_products?.length > 0 && <RelatedProduct productState={productState} />}
+      {/* {productState?.product?.related_products?.length > 0 && <RelatedProduct productState={productState} />} */}
+      <RelatedProduct productState={productState} />
       {ProductData && <StickyCheckout ProductData={ProductData} isLoading={isLoading} />}
     </>
   );
