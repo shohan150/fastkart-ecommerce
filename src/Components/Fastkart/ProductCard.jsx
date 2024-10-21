@@ -6,12 +6,10 @@ import { LeafSVG } from '../Common/CommonSVG';
 import ProductSection1 from './ProductSections/ProductSection1';
 import ProductSection2 from './ProductSections/ProductSection2';
 import ProductSection3 from './ProductSections/ProductSection3';
-import ProductSection4 from './ProductSections/ProductSection4';
 import ShopCategory from './ShopCategory';
-import ShowCaseBanner from './ShowCaseBanner';
-import SingleBanner from './SingleBanner';
-import TwoBanners from './TwoBanners';
-import VegetableBanner from './VegetableBanner';
+// import SingleBanner from './SingleBanner';
+// import TwoBanners from './TwoBanners';
+// import VegetableBanner from './VegetableBanner';
 
 const ProductCard = ({ dataAPI }) => {
   const { filteredProduct } = useContext(ProductIdsContext);
@@ -39,11 +37,20 @@ const ProductCard = ({ dataAPI }) => {
           classes={{ sliderOption: categorySliderOption }}
         />
       )}
-      {dataAPI?.main_content?.section3_two_column_banners?.status && <ShowCaseBanner dataAPI={dataAPI?.main_content?.section3_two_column_banners} />}
+      {/* {dataAPI?.main_content?.section3_two_column_banners?.status && <ShowCaseBanner dataAPI={dataAPI?.main_content?.section3_two_column_banners} />} */}
+
       {dataAPI?.main_content?.section4_products?.status && (
-        <ProductSection3 dataAPI={dataAPI?.main_content?.section4_products} ProductData={filteredProduct} svgUrl={<LeafSVG className='icon-width' />} />
+        <ProductSection3 dataAPI={dataAPI?.main_content?.section4_products} ProductData={filteredProduct} />
       )}
-      {dataAPI?.main_content?.section5_coupons?.status && (
+      {dataAPI?.main_content?.section4_products?.status && (
+        <ProductSection3 dataAPI={dataAPI?.main_content?.section4_products} ProductData={filteredProduct} />
+      )}
+      {dataAPI?.main_content?.section4_products?.status && (
+        <ProductSection3 dataAPI={dataAPI?.main_content?.section4_products} ProductData={filteredProduct} />
+      )}
+
+
+      {/* {dataAPI?.main_content?.section5_coupons?.status && (
         <SingleBanner
           classes={{ sectionClass: 'section-t-space sale-banner' }}
           image_url={dataAPI?.main_content?.section5_coupons?.image_url}
@@ -56,7 +63,7 @@ const ProductCard = ({ dataAPI }) => {
       {dataAPI?.main_content?.section7_products?.status && (
         <ProductSection4 dataAPI={dataAPI?.main_content?.section7_products} ProductData={filteredProduct} svgUrl={<LeafSVG className='icon-width' />} noCustomClass={true} />
       )}
-      {dataAPI?.main_content?.section8_full_width_banner?.status && <VegetableBanner dataAPI={dataAPI} />}
+      {dataAPI?.main_content?.section8_full_width_banner?.status && <VegetableBanner dataAPI={dataAPI} />} */}
 
     </Col>
   );

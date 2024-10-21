@@ -1,8 +1,8 @@
-import { useMemo } from 'react';
-import { Col, Row } from 'reactstrap';
-import Slider from 'react-slick';
 import CustomHeading from '@/Components/Common/CustomHeading';
 import ProductBox1 from '@/Components/Common/ProductBox/ProductBox1/ProductBox1';
+import { useMemo } from 'react';
+import Slider from 'react-slick';
+import { Col, Row } from 'reactstrap';
 import { productSliderOption } from '../../../../Data/SliderSettingsData';
 
 const ProductSection3 = ({ dataAPI, ProductData, svgUrl }) => {

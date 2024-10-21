@@ -22,18 +22,36 @@
             .accordion-button {
               span {
                 background: rgba(246, 247, 248, 0.05);
-                background-image: linear-gradient(135deg, #3f4242 0%, rgba(237, 238, 241, 0.1) 20%, #3f4242 40%, #3f4242 100%);
+                background-image: linear-gradient(
+                  135deg,
+                  #3f4242 0%,
+                  rgba(237, 238, 241, 0.1) 20%,
+                  #3f4242 40%,
+                  #3f4242 100%
+                );
               }
             }
           }
 
           .placeholder {
             background: rgba(246, 247, 248, 0.05);
-            background-image: linear-gradient(135deg, #3f4242 0%, rgba(237, 238, 241, 0.1) 20%, #3f4242 40%, #3f4242 100%);
+            background-image: linear-gradient(
+              135deg,
+              #3f4242 0%,
+              rgba(237, 238, 241, 0.1) 20%,
+              #3f4242 40%,
+              #3f4242 100%
+            );
 
             &::after {
               background: rgba(246, 247, 248, 0.05);
-              background-image: linear-gradient(135deg, #3f4242 0%, rgba(237, 238, 241, 0.1) 20%, #3f4242 40%, #3f4242 100%);
+              background-image: linear-gradient(
+                135deg,
+                #3f4242 0%,
+                rgba(237, 238, 241, 0.1) 20%,
+                #3f4242 40%,
+                #3f4242 100%
+              );
             }
           }
         }
@@ -50,7 +68,13 @@
       .card-name {
         h5 {
           background: rgba(246, 247, 248, 0.05);
-          background-image: linear-gradient(135deg, #3f4242 0%, rgba(237, 238, 241, 0.1) 20%, #3f4242 40%, #3f4242 100%);
+          background-image: linear-gradient(
+            135deg,
+            #3f4242 0%,
+            rgba(237, 238, 241, 0.1) 20%,
+            #3f4242 40%,
+            #3f4242 100%
+          );
         }
       }
     }
@@ -58,7 +82,13 @@
     .coupon-content {
       p {
         background: rgba(246, 247, 248, 0.05);
-        background-image: linear-gradient(135deg, #3f4242 0%, rgba(237, 238, 241, 0.1) 20%, #3f4242 40%, #3f4242 100%);
+        background-image: linear-gradient(
+          135deg,
+          #3f4242 0%,
+          rgba(237, 238, 241, 0.1) 20%,
+          #3f4242 40%,
+          #3f4242 100%
+        );
       }
     }
   }
@@ -71,28 +101,44 @@
 .skeleton-compare {
   .placeholder {
     background: rgba(246, 247, 248, 0.05);
-    background-image: linear-gradient(135deg, rgba(246, 247, 248, 0.05) 0%, rgba(237, 238, 241, 0.1) 20%, rgba(246, 247, 248, 0.05) 40%, rgba(246, 247, 248, 0.05) 100%);
+    background-image: linear-gradient(
+      135deg,
+      rgba(246, 247, 248, 0.05) 0%,
+      rgba(237, 238, 241, 0.1) 20%,
+      rgba(246, 247, 248, 0.05) 40%,
+      rgba(246, 247, 248, 0.05) 100%
+    );
   }
 
   .compare-part {
     .img-section {
       .compare-img {
         background: rgba(246, 247, 248, 0.05);
-        background-image: linear-gradient(135deg, rgba(246, 247, 248, 0.05) 0%, rgba(237, 238, 241, 0.1) 20%, rgba(246, 247, 248, 0.05) 40%, rgba(246, 247, 248, 0.05) 100%);
+        background-image: linear-gradient(
+          135deg,
+          rgba(246, 247, 248, 0.05) 0%,
+          rgba(237, 238, 241, 0.1) 20%,
+          rgba(246, 247, 248, 0.05) 40%,
+          rgba(246, 247, 248, 0.05) 100%
+        );
       }
     }
   }
 }
 
 .common-skeleton {
-
   .img-box,
   ul {
-
     .placeholder,
     .img {
       background: rgba(246, 247, 248, 0.05);
-      background-image: linear-gradient(135deg, rgba(246, 247, 248, 0.05) 0%, rgba(237, 238, 241, 0.1) 20%, rgba(246, 247, 248, 0.05) 40%, rgba(246, 247, 248, 0.05) 100%);
+      background-image: linear-gradient(
+        135deg,
+        rgba(246, 247, 248, 0.05) 0%,
+        rgba(237, 238, 241, 0.1) 20%,
+        rgba(246, 247, 248, 0.05) 40%,
+        rgba(246, 247, 248, 0.05) 100%
+      );
     }
   }
 }
@@ -100,7 +146,13 @@
 .skeleton-vertical {
   .offer-image {
     background: rgba(246, 247, 248, 0.05);
-    background-image: linear-gradient(135deg, rgba(246, 247, 248, 0.05) 0%, rgba(237, 238, 241, 0.1) 20%, rgba(246, 247, 248, 0.05) 40%, rgba(246, 247, 248, 0.05) 100%);
+    background-image: linear-gradient(
+      135deg,
+      rgba(246, 247, 248, 0.05) 0%,
+      rgba(237, 238, 241, 0.1) 20%,
+      rgba(246, 247, 248, 0.05) 40%,
+      rgba(246, 247, 248, 0.05) 100%
+    );
   }
 
   &.offer-product {
@@ -108,14 +160,26 @@
       a {
         .name {
           background: rgba(246, 247, 248, 0.05);
-          background-image: linear-gradient(135deg, rgba(246, 247, 248, 0.05) 0%, rgba(237, 238, 241, 0.1) 20%, rgba(246, 247, 248, 0.05) 40%, rgba(246, 247, 248, 0.05) 100%);
+          background-image: linear-gradient(
+            135deg,
+            rgba(246, 247, 248, 0.05) 0%,
+            rgba(237, 238, 241, 0.1) 20%,
+            rgba(246, 247, 248, 0.05) 40%,
+            rgba(246, 247, 248, 0.05) 100%
+          );
         }
       }
 
       span,
       .vertical-price {
         background: rgba(246, 247, 248, 0.05);
-        background-image: linear-gradient(135deg, rgba(246, 247, 248, 0.05) 0%, rgba(237, 238, 241, 0.1) 20%, rgba(246, 247, 248, 0.05) 40%, rgba(246, 247, 248, 0.05) 100%);
+        background-image: linear-gradient(
+          135deg,
+          rgba(246, 247, 248, 0.05) 0%,
+          rgba(237, 238, 241, 0.1) 20%,
+          rgba(246, 247, 248, 0.05) 40%,
+          rgba(246, 247, 248, 0.05) 100%
+        );
       }
     }
   }
@@ -123,25 +187,42 @@
 
 .skeleton-seller {
   .contain-name {
-
     h3,
     .product-label {
       background: rgba(246, 247, 248, 0.05);
-      background-image: linear-gradient(135deg, rgba(246, 247, 248, 0.05) 0%, rgba(237, 238, 241, 0.1) 20%, rgba(246, 247, 248, 0.05) 40%, rgba(246, 247, 248, 0.05) 100%);
+      background-image: linear-gradient(
+        135deg,
+        rgba(246, 247, 248, 0.05) 0%,
+        rgba(237, 238, 241, 0.1) 20%,
+        rgba(246, 247, 248, 0.05) 40%,
+        rgba(246, 247, 248, 0.05) 100%
+      );
     }
   }
 
   .vendor-text,
   .saller-contact {
     background: rgba(246, 247, 248, 0.05);
-    background-image: linear-gradient(135deg, rgba(246, 247, 248, 0.05) 0%, rgba(237, 238, 241, 0.1) 20%, rgba(246, 247, 248, 0.05) 40%, rgba(246, 247, 248, 0.05) 100%);
+    background-image: linear-gradient(
+      135deg,
+      rgba(246, 247, 248, 0.05) 0%,
+      rgba(237, 238, 241, 0.1) 20%,
+      rgba(246, 247, 248, 0.05) 40%,
+      rgba(246, 247, 248, 0.05) 100%
+    );
   }
 }
 
 .skeleton {
   *:empty {
     background-color: rgba(246, 247, 248, 0.05);
-    background-image: linear-gradient(135deg, #3f4242 0%, rgba(237, 238, 241, 0.1) 20%, #3f4242 40%, #3f4242 100%);
+    background-image: linear-gradient(
+      135deg,
+      #3f4242 0%,
+      rgba(237, 238, 241, 0.1) 20%,
+      #3f4242 40%,
+      #3f4242 100%
+    );
   }
 }
 
@@ -241,7 +322,12 @@
 .skeleton-body {
   .skeleton-text-wrap {
     .placeholder {
-      background: linear-gradient(90deg, rgba(29, 29, 34, 0.41) 8%, #2a2d2d 18%, rgba(29, 29, 29, 0.41) 33%);
+      background: linear-gradient(
+        90deg,
+        rgba(29, 29, 34, 0.41) 8%,
+        #2a2d2d 18%,
+        rgba(29, 29, 29, 0.41) 33%
+      );
     }
   }
 
@@ -251,7 +337,6 @@
       background-color: #3f4242 !important;
     }
   }
-
 
   .skeleton-banner-sm {
     .bg-size {
@@ -324,14 +409,13 @@
 }
 
 .btn-animation {
-
   &:active,
   &:hover {
     color: #fff !important;
   }
 }
 
-.product-box .product-image .product-option li+li:after {
+.product-box .product-image .product-option li + li:after {
   background-color: #ddd;
 }
 
@@ -355,7 +439,6 @@
   }
 
   .btn-add-cart {
-
     &:hover,
     &:active,
     &:first-child:active {
@@ -478,7 +561,7 @@
   .product-left-box {
     .product-main-1 {
       .owl-nav {
-        [class*=owl-] {
+        [class*="owl-"] {
           border: 1px solid rgba(119, 119, 119, 0.1);
           box-shadow: 0 0 8px rgba(119, 119, 119, 0.18);
           background-color: #2a2d2d;
@@ -682,13 +765,13 @@ header {
 
 .product-list {
   li {
-    &:nth-child(n+3) {
+    &:nth-child(n + 3) {
       &:after {
         border-color: #777777;
       }
     }
 
-    &:nth-child(n+4) {
+    &:nth-child(n + 4) {
       &::after {
         border-color: #777777;
       }
@@ -701,7 +784,7 @@ header {
     .modal-content {
       .view-image-slider {
         .owl-nav {
-          [class*=owl-] {
+          [class*="owl-"] {
             border: 1px solid rgba(119, 119, 119, 0.1);
             box-shadow: 0 0 8px rgba(119, 119, 119, 0.18);
             background-color: #2a2d2d;
@@ -848,7 +931,7 @@ header {
 }
 
 .form-floating {
-  >.form-control {
+  > .form-control {
     border-color: #777777;
   }
 }
@@ -899,7 +982,6 @@ header {
 }
 
 .summery-box {
-
   .summery-header,
   .summery-contain,
   .summery-total {
@@ -936,7 +1018,7 @@ header {
   }
 
   .delivery-address-box {
-    >div {
+    > div {
       .label {
         color: #ffffff;
       }
@@ -953,8 +1035,7 @@ header {
 }
 
 .theme-form-floating {
-  >.form-control {
-
+  > .form-control {
     &:focus,
     &:not(:placeholder-shown) {
       color: #ffffff;
@@ -969,7 +1050,7 @@ header {
 }
 
 .theme-form-floating {
-  >.form-select {
+  > .form-select {
     background-color: #2a2d2d;
     color: #ffffff;
     border-color: #777777;
@@ -1236,7 +1317,6 @@ header {
 
 .home-contain {
   .home-detail {
-
     h1,
     h2 {
       color: #222222 !important;
@@ -1285,7 +1365,6 @@ header {
 }
 
 footer {
-
   &::after,
   &::before {
     filter: invert(1);
@@ -1360,7 +1439,7 @@ footer {
 
 .service-contain {
   .service-box {
-    +.service-box {
+    + .service-box {
       &::before {
         border-color: rgba(193, 193, 193, 0.5);
       }
@@ -1434,7 +1513,6 @@ footer {
       }
 
       a {
-
         .icli,
         span {
           color: #ffffff;
@@ -1470,7 +1548,7 @@ header {
   .header-top {
     .about-list {
       li {
-        +li {
+        + li {
           &::after {
             background-color: rgba(221, 221, 221, 0.3);
           }
@@ -1485,7 +1563,7 @@ header {
         }
       }
 
-      >li {
+      > li {
         .theme-form-select {
           .dropdown-menu {
             background-color: #1d1d22;
@@ -1541,7 +1619,7 @@ header {
         li {
           color: #dddddd;
 
-          +li {
+          + li {
             &:after {
               background-color: rgba(221, 221, 221, 0.3);
             }
@@ -1624,7 +1702,8 @@ header {
 
     .header-nav-left {
       .dropdown-category {
-        box-shadow: -1px 0 10px 0 rgba(137, 137, 137, 0.05), 5px 20px 40px 0 rgba(137, 137, 137, 0.05);
+        box-shadow: -1px 0 10px 0 rgba(137, 137, 137, 0.05),
+          5px 20px 40px 0 rgba(137, 137, 137, 0.05);
 
         span {
           color: #ffffff;
@@ -1742,7 +1821,7 @@ header {
     .onhover-div-login {
       .user-box-name {
         li {
-          +li {
+          + li {
             border-color: rgba(119, 119, 119, 0.65);
           }
         }
@@ -1750,7 +1829,8 @@ header {
     }
 
     .onhover-div {
-      box-shadow: -1px 0 10px rgba(255, 255, 255, 0.0705882353), 5px 20px 40px rgba(255, 255, 255, 0.0392156863);
+      box-shadow: -1px 0 10px rgba(255, 255, 255, 0.0705882353),
+        5px 20px 40px rgba(255, 255, 255, 0.0392156863);
 
       &.fixed-cart {
         .cart-title {
@@ -1792,8 +1872,8 @@ header {
       }
 
       .cart-list {
-        >li {
-          +li {
+        > li {
+          + li {
             border-color: rgba(119, 119, 119, 0.44);
           }
 
@@ -1805,7 +1885,6 @@ header {
               }
 
               .header-button-group {
-
                 .delete-button,
                 .edit-button {
                   border: 1px solid rgba(119, 119, 119, 0.4);
@@ -1829,7 +1908,7 @@ header {
       .onhover-div-login {
         .user-box-name {
           li {
-            +li {
+            + li {
               border-color: #777777a6;
             }
           }
@@ -1840,8 +1919,8 @@ header {
 
   .header-top {
     .about-list {
-      >li {
-        +li {
+      > li {
+        + li {
           &::after {
             background-color: rgba(255, 255, 255, 0.3);
           }
@@ -1877,7 +1956,6 @@ header {
   background-color: #1d1d22;
 
   .summary-total {
-
     &::before,
     &::after {
       background-color: #1d1d22;
@@ -1958,7 +2036,11 @@ header {
       .fire {
         .fire-main {
           .main-fire {
-            background-image: radial-gradient(farthest-corner at 10px 0, #ddd 0%, #ffffff 95%);
+            background-image: radial-gradient(
+              farthest-corner at 10px 0,
+              #ddd 0%,
+              #ffffff 95%
+            );
           }
 
           .particle-fire {
@@ -2113,7 +2195,6 @@ header {
 .banner-contain-3 {
   .banner-detail {
     &.banner-details-dark {
-
       h3,
       h4,
       h6 {
@@ -2208,7 +2289,7 @@ header {
 .product-list {
   &.sidebar-product {
     li {
-      +li {
+      + li {
         &:after {
           border-color: rgba(119, 119, 119, 0.3);
         }
@@ -2238,7 +2319,7 @@ header {
 }
 
 .product-box-4 {
-  border-color: rgba(119, 119, 119, .4);
+  border-color: rgba(119, 119, 119, 0.4);
 
   h5 {
     color: $content-color;
@@ -2331,7 +2412,6 @@ header {
     }
   }
 }
-
 
 .product-section {
   .right-box-contain {
@@ -2567,7 +2647,7 @@ header {
 
 .compare-section {
   .compare-row {
-    >div {
+    > div {
       &:first-child {
         .compare-part {
           border-color: rgba(119, 119, 119, 0.44);
@@ -2676,8 +2756,8 @@ header {
 
 .shop-section {
   .top-filter-category {
-    >.row {
-      >div {
+    > .row {
+      > div {
         border-right-color: rgba(119, 119, 119, 0.35);
       }
     }
@@ -2858,7 +2938,6 @@ header {
 }
 
 .irs {
-
   .irs-to,
   .irs-from {
     color: #ffffff;
@@ -2882,7 +2961,6 @@ header {
 
 .shop-banner-contain {
   .shop-banner-details {
-
     h2 {
       color: #222222;
     }
@@ -2927,7 +3005,7 @@ header {
 
 .notification-list {
   li {
-    +li {
+    + li {
       border-top-color: rgba(119, 119, 119, 0.4);
     }
 
@@ -3011,7 +3089,7 @@ header {
 
             .title {
               span {
-                color: rgba(255, 255, 255, .7);
+                color: rgba(255, 255, 255, 0.7);
               }
             }
           }
@@ -3034,7 +3112,7 @@ header {
         }
 
         .edit-card {
-          background-color: rgba(42, 45, 45, .8);
+          background-color: rgba(42, 45, 45, 0.8);
 
           a {
             color: #ffffff;
@@ -3045,7 +3123,7 @@ header {
 
     .dashboard-address {
       .address-box {
-        >div {
+        > div {
           .label {
             color: #ffffff;
           }
@@ -3225,7 +3303,6 @@ header {
   }
 }
 
-
 .theme-option {
   .setting-box {
     .setting-button {
@@ -3271,7 +3348,6 @@ header {
     }
 
     .coming-contain {
-
       .coming-form {
         .form-control {
           background-color: #ffffff;
@@ -3365,7 +3441,7 @@ header {
         .switch-radio {
           .form-check-input {
             &:checked {
-              +label {
+              + label {
                 &:before {
                   background-color: #ffffff;
                 }
@@ -3392,14 +3468,13 @@ header {
   }
 }
 
-
 .offer-box {
   .offer-contain {
     .offer-timing {
       .time {
         ul {
           li {
-            +li {
+            + li {
               &::before {
                 color: #222;
               }
@@ -3530,7 +3605,6 @@ header {
 
 .banner-contain-3 {
   .banner-detail {
-
     h5,
     h4 {
       color: #222;
@@ -3595,7 +3669,6 @@ footer {
 
       .location-box-2 {
         button {
-
           .icli,
           span,
           .down-arrow {
@@ -3609,7 +3682,6 @@ footer {
   .navbar-top {
     .support-box {
       .support-number {
-
         h2,
         h4 {
           color: #ffffff;
@@ -3649,7 +3721,7 @@ footer {
 
     .option-list-2 {
       li {
-        +li {
+        + li {
           &::after {
             @include mq-max(xl) {
               background-color: rgba(255, 255, 255, 0.2);
@@ -3661,7 +3733,6 @@ footer {
           @include mq-max(xl) {
             border-color: rgba(255, 255, 255, 0.2);
           }
-
 
           .icli {
             @include mq-max(xl) {
@@ -3891,7 +3962,6 @@ footer {
 
 .vendor-detail-box-2 {
   .share-contact {
-
     .vendor-share,
     .vendor-contect {
       h5 {
@@ -3941,8 +4011,12 @@ footer {
 
 .banner-contain-2 {
   .banner-detail-2 {
-    >div {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 24.21%, rgba(255, 255, 255, 0.2) 75.22%);
+    > div {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.2) 24.21%,
+        rgba(255, 255, 255, 0.2) 75.22%
+      );
 
       h2 {
         color: #222222;
@@ -4034,7 +4108,6 @@ footer {
           }
         }
       }
-
     }
   }
 
@@ -4106,7 +4179,6 @@ footer {
     }
 
     .service-detail {
-
       h6,
       h3 {
         color: #fff;
@@ -4122,15 +4194,15 @@ footer {
 .checkout-section-2 {
   .left-sidebar-checkout {
     .checkout-detail-box {
-      >ul {
-        >li {
+      > ul {
+        > li {
           .checkout-box {
             background-color: #1d1d22;
             box-shadow: 0 0 8px rgba(119, 119, 119, 0.122);
 
             .checkout-detail {
               .delivery-address-box {
-                >div {
+                > div {
                   .label {
                     color: #fff;
                   }
@@ -4288,7 +4360,7 @@ footer {
 @media (max-width: 576px) {
   .product-list {
     li {
-      &:nth-child(n+2) {
+      &:nth-child(n + 2) {
         &:after {
           border-color: #777;
         }

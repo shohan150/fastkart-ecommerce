@@ -33,7 +33,8 @@
 
     .modal-header {
       border-bottom: none;
-      padding: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320))) calc(17px + (16 - 17) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)))
+        calc(17px + (16 - 17) * ((100vw - 320px) / (1920 - 320)));
 
       .modal-title {
         font-weight: 600;
@@ -62,7 +63,7 @@
         z-index: 1;
         @include flex_common;
 
-        body[dir='rtl'] & {
+        body[dir="rtl"] & {
           right: unset;
           left: 10px;
         }
@@ -72,7 +73,7 @@
         }
 
         &::before {
-          content: '\eb99';
+          content: "\eb99";
           @include remixicon;
         }
       }
@@ -111,7 +112,7 @@
           display: grid;
           gap: 3px;
 
-          body[dir='rtl'] & {
+          body[dir="rtl"] & {
             padding-left: unset;
             padding-right: 19px;
           }
@@ -130,7 +131,8 @@
 
     .modal-footer {
       border: none;
-      padding: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320))) calc(17px + (16 - 17) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)))
+        calc(17px + (16 - 17) * ((100vw - 320px) / (1920 - 320)));
       gap: 8px;
 
       button {
@@ -206,8 +208,15 @@
           .slick-prev,
           .slick-next {
             @include center(vertical);
-            @include pseudowh($width: calc(24px + (30 - 24) * ((100vw - 320px) / (1920 - 320))), $height: calc(24px + (30 - 24) * ((100vw - 320px) / (1920 - 320))));
-            @include flex_common($dis: flex !important, $align: center, $justify: center);
+            @include pseudowh(
+              $width: calc(24px + (30 - 24) * ((100vw - 320px) / (1920 - 320))),
+              $height: calc(24px + (30 - 24) * ((100vw - 320px) / (1920 - 320)))
+            );
+            @include flex_common(
+              $dis: flex !important,
+              $align: center,
+              $justify: center
+            );
             position: absolute;
             z-index: 1;
             background-color: $white;
@@ -226,7 +235,9 @@
 
             &::after {
               @include remixicon;
-              font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1920 - 320)));
+              font-size: calc(
+                17px + (20 - 17) * ((100vw - 320px) / (1920 - 320))
+              );
               line-height: 1;
               color: $title-color;
             }
@@ -243,7 +254,7 @@
 
             &::after {
               margin-right: 2px;
-              content: '\ea64';
+              content: "\ea64";
             }
           }
 
@@ -258,7 +269,7 @@
 
             &::after {
               margin-left: 2px;
-              content: '\ea6e';
+              content: "\ea6e";
             }
           }
         }
@@ -299,6 +310,22 @@
         }
       }
 
+      .product-detail {
+        margin-top: 12px;
+
+        h4 {
+          font-weight: 600;
+          margin-bottom: 7px;
+        }
+
+        p {
+          font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+          line-height: 1.4;
+          margin: 0;
+          color: $content-color;
+        }
+      }
+
       .right-sidebar-modal {
         .selection-section {
           h4 {
@@ -307,7 +334,11 @@
         }
 
         .select-package {
-          @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(5px + (13 - 5) * ((100vw - 320px) / (1920 - 320))));
+          @include flex_wrap(
+            $dis: flex,
+            $wrap: wrap,
+            $gap: calc(5px + (13 - 5) * ((100vw - 320px) / (1920 - 320)))
+          );
 
           @include mq-max(md) {
             justify-content: center;
@@ -483,7 +514,7 @@
             @include flex_common;
 
             &::after {
-              @include pos($pos: relative, $content: '');
+              @include pos($pos: relative, $content: "");
               width: 12px;
               height: 12px;
               background-color: var(--theme-color);
@@ -605,10 +636,12 @@
           del {
             color: $content-color;
             font-weight: 400;
-            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-size: calc(
+              14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+            );
             margin: 0 2px 0 6px;
 
-            body[dir='rtl'] & {
+            body[dir="rtl"] & {
               margin: 0 6px 0 2px;
             }
           }
@@ -616,13 +649,16 @@
           .modal-label {
             font-weight: 500;
             margin-left: 12px;
-            padding: 5px calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            padding: 5px
+              calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
             background-color: rgba(255, 79, 79, 0.1);
             border-radius: 5px;
             color: #ff4f4f;
-            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-size: calc(
+              14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+            );
 
-            body[dir='rtl'] & {
+            body[dir="rtl"] & {
               margin-left: unset;
               margin-right: 12px;
             }
@@ -630,7 +666,11 @@
         }
 
         .brand-list {
-          @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(9px + (12 - 9) * ((100vw - 320px) / (1920 - 320))));
+          @include flex_wrap(
+            $dis: flex,
+            $wrap: wrap,
+            $gap: calc(9px + (12 - 9) * ((100vw - 320px) / (1920 - 320)))
+          );
           align-items: center;
           margin-top: calc(13px + (19 - 13) * ((100vw - 320px) / (1920 - 320)));
           border-bottom: 1px dashed $border-color;
@@ -659,7 +699,9 @@
           margin-top: calc(16px + (21 - 16) * ((100vw - 320px) / (1920 - 320)));
 
           h4 {
-            font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-size: calc(
+              14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
+            );
             white-space: nowrap;
           }
 
@@ -687,7 +729,9 @@
           }
 
           p {
-            font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+            font-size: calc(
+              14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
+            );
             line-height: 1.4;
             margin: 0;
             color: $content-color;
@@ -708,7 +752,11 @@
           }
 
           .stoke-box {
-            @include flex_common($dis: flex, $align: center, $justify: flex-end);
+            @include flex_common(
+              $dis: flex,
+              $align: center,
+              $justify: flex-end
+            );
             height: 100%;
             flex-wrap: wrap;
             gap: 6px;
@@ -770,7 +818,7 @@
               background-color: #1d1d22;
             }
 
-            body[dir='rtl'] & {
+            body[dir="rtl"] & {
               text-align: right;
             }
 
@@ -782,7 +830,9 @@
             li {
               padding-left: 13px;
               width: 100%;
-              font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+              font-size: calc(
+                14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
+              );
               position: relative;
               color: #777;
 
@@ -790,7 +840,7 @@
                 color: #ddd;
               }
 
-              body[dir='rtl'] & {
+              body[dir="rtl"] & {
                 padding-left: unset;
                 padding-right: 13px;
               }
@@ -804,7 +854,7 @@
                 background-color: $content-color;
                 border-radius: 100%;
 
-                body[dir='rtl'] & {
+                body[dir="rtl"] & {
                   left: unset;
                   right: 0;
                 }
@@ -837,8 +887,12 @@
 
               button {
                 @include flex_common;
-                width: calc(26px + (35 - 26) * ((100vw - 320px) / (1920 - 320)));
-                height: calc(26px + (35 - 26) * ((100vw - 320px) / (1920 - 320)));
+                width: calc(
+                  26px + (35 - 26) * ((100vw - 320px) / (1920 - 320))
+                );
+                height: calc(
+                  26px + (35 - 26) * ((100vw - 320px) / (1920 - 320))
+                );
                 border: none;
                 padding: 0 !important;
                 background-color: $white;
@@ -855,7 +909,7 @@
                 stroke-width: 1px;
                 margin-top: -3px;
 
-                body[dir='rtl'] & {
+                body[dir="rtl"] & {
                   margin-right: unset;
                   margin-left: 10px;
                 }
@@ -890,7 +944,8 @@
     }
 
     .modal-body {
-      padding: calc(13px + (30 - 13) * ((100vw - 320px) / (1920 - 320))) calc(13px + (30 - 13) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(13px + (30 - 13) * ((100vw - 320px) / (1920 - 320)))
+        calc(13px + (30 - 13) * ((100vw - 320px) / (1920 - 320)));
 
       .location-list {
         .search-input {
@@ -916,7 +971,8 @@
         .disabled-box {
           display: flex;
           align-items: center;
-          padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
+          padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)))
+            calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
           border-bottom: 1px solid $border-color;
           margin-top: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
 
@@ -944,7 +1000,8 @@
             a {
               display: flex;
               align-items: center;
-              padding: calc(10px + (10 - 10) * ((100vw - 320px) / (1920 - 320))) calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
+              padding: calc(10px + (10 - 10) * ((100vw - 320px) / (1920 - 320)))
+                calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
               position: relative;
               transition: all 0.3s ease-in-out;
               z-index: 0;
@@ -1013,7 +1070,8 @@
     }
 
     .modal-body {
-      padding: calc(13px + (30 - 13) * ((100vw - 320px) / (1920 - 320))) calc(13px + (30 - 13) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(13px + (30 - 13) * ((100vw - 320px) / (1920 - 320)))
+        calc(13px + (30 - 13) * ((100vw - 320px) / (1920 - 320)));
 
       .deal-offer-box {
         max-height: 360px;
@@ -1040,7 +1098,11 @@
         }
 
         .deal-offer-list {
-          @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(6px + (16 - 6) * ((100vw - 320px) / (1920 - 320))));
+          @include flex_wrap(
+            $dis: flex,
+            $wrap: wrap,
+            $gap: calc(6px + (16 - 6) * ((100vw - 320px) / (1920 - 320)))
+          );
 
           li {
             width: 100%;
@@ -1089,7 +1151,12 @@
 
               .deal-image {
                 img {
-                  @include pseudowh($width: calc(69px + (80 - 69) * ((100vw - 320px) / (1920 - 320))), $height: calc(69px + (80 - 69) * ((100vw - 320px) / (1920 - 320))));
+                  @include pseudowh(
+                    $width:
+                      calc(69px + (80 - 69) * ((100vw - 320px) / (1920 - 320))),
+                    $height:
+                      calc(69px + (80 - 69) * ((100vw - 320px) / (1920 - 320)))
+                  );
                   object-fit: contain;
                 }
               }
@@ -1109,7 +1176,9 @@
                     @include line;
                     margin-bottom: 5px;
                     font-weight: 500;
-                    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                    font-size: calc(
+                      14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+                    );
                   }
                 }
 
@@ -1299,7 +1368,8 @@
   .product-wrapper {
     display: flex;
     align-items: center;
-    padding: calc(12px + (17 - 12) * ((100vw - 320px) / (1920 - 320))) calc(16px + (23 - 16) * ((100vw - 320px) / (1920 - 320)));
+    padding: calc(12px + (17 - 12) * ((100vw - 320px) / (1920 - 320)))
+      calc(16px + (23 - 16) * ((100vw - 320px) / (1920 - 320)));
     gap: 14px;
     margin-bottom: calc(8px + (22 - 8) * ((100vw - 320px) / (1920 - 320)));
     border-radius: calc(4px + (8 - 4) * ((100vw - 320px) / (1920 - 320)));
@@ -1351,7 +1421,7 @@
           align-items: center;
           gap: 3px;
 
-          body[dir='rtl'] & {
+          body[dir="rtl"] & {
             margin-left: unset;
             margin-right: 8px;
           }
@@ -1429,11 +1499,17 @@
         .name {
           font-size: 22px;
           font-weight: 700;
-          margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+          margin-bottom: calc(
+            10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))
+          );
         }
 
         .price-rating {
-          @include flex_common($dis: flex, $align: center, $justify: space-between);
+          @include flex_common(
+            $dis: flex,
+            $align: center,
+            $justify: space-between
+          );
 
           @include mq-max(md) {
             display: block;
@@ -1453,7 +1529,11 @@
 
           &-box {
             @include mq-max(3xl) {
-              @include flex_common($dis: flex, $align: center, $justify: space-between);
+              @include flex_common(
+                $dis: flex,
+                $align: center,
+                $justify: space-between
+              );
             }
 
             @include mq-max(xs) {
@@ -1480,16 +1560,22 @@
 
           .price {
             font-weight: 600;
-            font-size: calc(19px + (22 - 19) * ((100vw - 320px) / (1920 - 320)));
+            font-size: calc(
+              19px + (22 - 19) * ((100vw - 320px) / (1920 - 320))
+            );
 
             del {
               font-weight: 400;
-              font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+              font-size: calc(
+                14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+              );
               margin: 0 calc(0px + (2 - 0) * ((100vw - 320px) / (1920 - 320)));
             }
 
             span {
-              font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+              font-size: calc(
+                14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+              );
               font-weight: 500;
             }
           }
@@ -1508,7 +1594,7 @@
               margin-left: 8px;
               color: $title-color;
 
-              body[dir='rtl'] & {
+              body[dir="rtl"] & {
                 margin-left: unset;
                 margin-right: 8px;
               }
@@ -1527,8 +1613,11 @@
           p {
             color: $content-color;
             line-height: 1.7;
-            margin: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))) 0 0;
-            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+            margin: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))) 0
+              0;
+            font-size: calc(
+              14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+            );
             width: 100%;
 
             @include mq-max(md) {
@@ -1539,7 +1628,11 @@
 
         .product-package {
           .select-package {
-            @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(5px + (13 - 5) * ((100vw - 320px) / (1920 - 320))));
+            @include flex_wrap(
+              $dis: flex,
+              $wrap: wrap,
+              $gap: calc(5px + (13 - 5) * ((100vw - 320px) / (1920 - 320)))
+            );
 
             @include mq-max(md) {
               justify-content: center;
@@ -1684,7 +1777,7 @@
             + .form-check {
               margin-left: 15px;
 
-              body[dir='rtl'] & {
+              body[dir="rtl"] & {
                 margin-left: unset;
                 margin-right: 15px;
               }
@@ -1702,7 +1795,7 @@
               @include flex_common;
 
               &::after {
-                @include pos($pos: relative, $content: '');
+                @include pos($pos: relative, $content: "");
                 width: 12px;
                 height: 12px;
                 background-color: var(--theme-color);
@@ -1749,7 +1842,7 @@
             border: 1px solid #eee;
             display: inline-block;
 
-            body[dir='rtl'] & {
+            body[dir="rtl"] & {
               background-position: left 0.75rem center;
             }
           }
@@ -1807,7 +1900,11 @@
         }
 
         .note-box {
-          @include flex_wrap($dis: flex, $wrap: nowrap, $gap: calc(7px + (15 - 7) * ((100vw - 320px) / (1920 - 320))));
+          @include flex_wrap(
+            $dis: flex,
+            $wrap: nowrap,
+            $gap: calc(7px + (15 - 7) * ((100vw - 320px) / (1920 - 320)))
+          );
           align-items: center;
           margin-top: 20px;
 
@@ -1918,7 +2015,11 @@
           }
 
           a {
-            @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(5px + (8 - 5) * ((100vw - 320px) / (1920 - 320))));
+            @include flex_wrap(
+              $dis: flex,
+              $wrap: wrap,
+              $gap: calc(5px + (8 - 5) * ((100vw - 320px) / (1920 - 320)))
+            );
             font-size: 16px;
             align-items: center;
             color: #777;
@@ -1941,7 +2042,11 @@
             margin-top: 20px;
 
             .product-info-list {
-              @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320))));
+              @include flex_wrap(
+                $dis: flex,
+                $wrap: wrap,
+                $gap: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)))
+              );
               align-items: flex-start;
               text-align: left;
               column-count: 2;
@@ -1959,7 +2064,9 @@
               li {
                 padding-left: 13px;
                 width: 100%;
-                font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+                font-size: calc(
+                  14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
+                );
                 position: relative;
                 color: #777;
 
@@ -1981,7 +2088,7 @@
                   background-color: $content-color;
                   border-radius: 100%;
 
-                  body[dir='rtl'] & {
+                  body[dir="rtl"] & {
                     left: unset;
                     right: 0;
                   }
@@ -2012,7 +2119,9 @@
               width: 90%;
               font-weight: 400;
               margin-bottom: 5px;
-              font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+              font-size: calc(
+                14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+              );
               line-height: 1.6;
 
               @include mq-max(md) {
@@ -2039,7 +2148,11 @@
 
           ul {
             align-items: center;
-            @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(3px + (8 - 3) * ((100vw - 320px) / (1920 - 320))));
+            @include flex_wrap(
+              $dis: flex,
+              $wrap: wrap,
+              $gap: calc(3px + (8 - 3) * ((100vw - 320px) / (1920 - 320)))
+            );
 
             @include mq-max(md) {
               justify-content: center;
@@ -2082,7 +2195,11 @@
 
         .product-package {
           .select-package {
-            @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(5px + (13 - 5) * ((100vw - 320px) / (1920 - 320))));
+            @include flex_wrap(
+              $dis: flex,
+              $wrap: wrap,
+              $gap: calc(5px + (13 - 5) * ((100vw - 320px) / (1920 - 320)))
+            );
 
             @include mq-max(md) {
               justify-content: center;
@@ -2231,7 +2348,7 @@
             + .form-check {
               margin-left: 15px;
 
-              body[dir='rtl'] & {
+              body[dir="rtl"] & {
                 margin-left: unset;
                 margin-right: 15px;
               }
@@ -2249,7 +2366,7 @@
               @include flex_common;
 
               &::after {
-                @include pos($pos: relative, $content: '');
+                @include pos($pos: relative, $content: "");
                 width: 12px;
                 height: 12px;
                 background-color: var(--theme-color);
@@ -2296,7 +2413,7 @@
             border: 1px solid #eee;
             display: inline-block;
 
-            body[dir='rtl'] & {
+            body[dir="rtl"] & {
               background-position: left 0.75rem center;
             }
           }
@@ -2408,7 +2525,8 @@
       border-radius: 0;
       background-color: $light-gray;
       width: calc(100% - 400px);
-      padding: calc(18px + (30 - 18) * ((100vw - 320px) / (1920 - 320))) calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(18px + (30 - 18) * ((100vw - 320px) / (1920 - 320)))
+        calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
       display: flex;
       flex-direction: unset;
       align-items: center;
@@ -2419,7 +2537,9 @@
 
       .modal-logo {
         width: calc(94px + (100 - 94) * ((100vw - 320px) / (1920 - 320)));
-        margin-bottom: calc(12px + (23 - 12) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: calc(
+          12px + (23 - 12) * ((100vw - 320px) / (1920 - 320))
+        );
       }
 
       h2 {
@@ -2427,7 +2547,9 @@
         font-weight: bolder;
         text-transform: uppercase;
         color: var(--theme-color);
-        margin-bottom: calc(15px + (21 - 15) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: calc(
+          15px + (21 - 15) * ((100vw - 320px) / (1920 - 320))
+        );
 
         span {
           color: $title-color;
@@ -2464,7 +2586,8 @@
         }
 
         .input-group-text {
-          padding: 12px calc(19px + (24 - 19) * ((100vw - 320px) / (1920 - 320)));
+          padding: 12px
+            calc(19px + (24 - 19) * ((100vw - 320px) / (1920 - 320)));
           background-color: var(--theme-color);
           color: #ffffff;
           font-size: 14px;
@@ -2516,13 +2639,13 @@
         margin-right: 10px;
         background: unset;
 
-        body[dir='rtl'] & {
+        body[dir="rtl"] & {
           margin-right: unset;
           margin-left: 10px;
         }
 
         &::before {
-          content: '\eb99';
+          content: "\eb99";
           @include remixicon;
           font-size: 21px;
           line-height: 1;
@@ -2581,7 +2704,7 @@
               svg {
                 margin-right: 10px;
 
-                body[dir='rtl'] & {
+                body[dir="rtl"] & {
                   margin-left: 10px;
                   margin-right: unset;
                 }
@@ -2615,7 +2738,11 @@
             }
 
             ul {
-              @include flex_wrap($dis: flex, $wrap: wrap, $gap: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))));
+              @include flex_wrap(
+                $dis: flex,
+                $wrap: wrap,
+                $gap: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)))
+              );
               padding-top: 16px;
 
               li {
@@ -2677,7 +2804,7 @@
                   }
 
                   &::before {
-                    @include pos($pos: absolute, $content: '\ea4e');
+                    @include pos($pos: absolute, $content: "\ea4e");
                     @include remixicon;
                     @include pseudowh($width: 26px, $height: 26px);
                     @include flex_common;
@@ -2688,7 +2815,7 @@
                     border-radius: 100%;
                     transition: all 0.3s ease-in-out;
 
-                    body[dir='rtl'] & {
+                    body[dir="rtl"] & {
                       right: unset;
                       left: 0;
                     }

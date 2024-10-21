@@ -1,11 +1,10 @@
 import I18NextContext from '@/Helper/I18NextContext';
 import SettingContext from '@/Helper/SettingContext';
-import TextLimit from '@/Utils/CustomFunctions/TextLimit';
+import { ModifyString } from '@/Utils/CustomFunctions/ModifyString';
 import { useTranslation } from '@/app/i18n/client';
 import { useContext } from 'react';
 import { Label } from 'reactstrap';
 import ProductBox1Rating from '../ProductBox1Rating';
-import { ModifyString } from '@/Utils/CustomFunctions/ModifyString';
 
 const RightVariationModal = ({ cloneVariation }) => {
   const { convertCurrency } = useContext(SettingContext);
@@ -27,12 +26,12 @@ const RightVariationModal = ({ cloneVariation }) => {
           {cloneVariation?.product?.reviews_count} {t('Reviews')}
         </div>
       </div>
-      <div className='product-detail'>
+      {/* <div className='product-detail'>
         <h4>{t('ProductDetails')}:</h4>
         <div className='mt-2'>
           <TextLimit value={cloneVariation?.product?.short_description} maxLength={200} tag={'p'}/>
         </div>
-      </div>
+      </div> */}
       <div className='pickup-box'>
         <div className='product-title'>
           <h4>{t('ProductInformation')}</h4>

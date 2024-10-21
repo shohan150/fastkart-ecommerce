@@ -1,5 +1,5 @@
 import CustomHeading from '@/Components/Common/CustomHeading';
-import ProductBox1 from '@/Components/Common/ProductBox/ProductBox1/ProductBox1';
+import ProductBox1Custom from '@/Components/Common/ProductBox/ProductBox1/ProductBox1Custom';
 import WrapperComponent from '@/Components/Common/WrapperComponent';
 import ProductIdsContext from '@/Helper/ProductIdsContext';
 import { useContext, useMemo } from 'react';
@@ -32,7 +32,7 @@ const DealProduct = ({ dataAPI }) => {
             className='g-sm-4 g-3'>
             {filterProduct?.map((product, i) => (
               <Col key={i}>
-                <ProductBox1 imgUrl={product?.product_thumbnail} productDetail={product} classObj={{ productStyle: 'product-standard theme-plus', productBoxClass: 'product-box-bg' }} />
+                <ProductBox1Custom imgUrl={product?.product_thumbnail} productDetail={product} classObj={{ productStyle: 'product-standard theme-plus', productBoxClass: 'product-box-bg' }} />
               </Col>
             ))}
           </Row>
