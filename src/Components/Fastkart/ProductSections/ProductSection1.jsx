@@ -6,9 +6,13 @@ import { Col, Row } from 'reactstrap';
 import { productSliderOption } from '../../../../Data/SliderSettingsData';
 
 const ProductSection1 = ({ dataAPI, ProductData, svgUrl, noCustomClass = false, customClass, classObj, customSliderOption = productSliderOption, isHeadingVisible = true }) => {
+
   const filterProduct = useMemo(() => {
     return ProductData?.filter((el) => (dataAPI?.product_ids ? dataAPI?.product_ids?.includes(el.id) : el));
   }, [ProductData, dataAPI]);
+
+  // console.log(ProductData, dataAPI?.product_ids);
+  
   return (
     <>
       {isHeadingVisible ? (

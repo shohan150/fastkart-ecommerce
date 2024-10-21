@@ -362,6 +362,51 @@ export const romeCategoryOption = {
   ],
 };
 
+export const romeCategoryOptionCopy = {
+  arrows: true,
+  infinite: true,
+  slidesToShow: 8,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1745,
+      settings: {
+        slidesToShow: 6,
+      },
+    },
+    {
+      breakpoint: 1399,
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 1124,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 692,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 482,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
+};
+
 export const bestValueSliderOption = {
   arrows: true,
   infinite: true,

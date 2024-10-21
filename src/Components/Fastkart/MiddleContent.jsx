@@ -7,7 +7,6 @@ import DealProduct from './DealProducts';
 import DetailedBanner from './DetailedBanner';
 
 
-
 const MiddleContent = ({ dataAPI }) => {
   const { filteredProduct } = useContext(ProductIdsContext);
   return (

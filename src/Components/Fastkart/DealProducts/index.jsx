@@ -1,10 +1,9 @@
+import CustomHeading from '@/Components/Common/CustomHeading';
+import ProductBox1 from '@/Components/Common/ProductBox/ProductBox1/ProductBox1';
+import WrapperComponent from '@/Components/Common/WrapperComponent';
+import ProductIdsContext from '@/Helper/ProductIdsContext';
 import { useContext, useMemo } from 'react';
 import { Col, Row } from 'reactstrap';
-import CustomHeading from '@/Components/Common/CustomHeading';
-import WrapperComponent from '@/Components/Common/WrapperComponent';
-import SpecialOffer from './SpecialOffer';
-import ProductBox1 from '@/Components/Common/ProductBox/ProductBox1/ProductBox1';
-import ProductIdsContext from '@/Helper/ProductIdsContext';
 
 const DealProduct = ({ dataAPI }) => {
   const { filteredProduct } = useContext(ProductIdsContext);
@@ -14,7 +13,7 @@ const DealProduct = ({ dataAPI }) => {
   return (
     <WrapperComponent classes={{ sectionClass: 'product-section product-section-3' }} noRowCol={true}>
       <CustomHeading title={dataAPI?.title} />
-      <Row className='g-sm-4 g-3'>
+      {/* <Row className='g-sm-4 g-3'>
         {dataAPI?.deal_of_days?.status && (
           <Col xxl={4} lg={5} className='order-lg-2 d-xxl-block d-none'>
             <SpecialOffer dataAPI={dataAPI} ProductData={filteredProduct} />
@@ -23,11 +22,11 @@ const DealProduct = ({ dataAPI }) => {
         <Col
           xxl={(dataAPI?.deal_of_days?.status && dataAPI?.deal_of_days?.deals?.length) || 0 ? 8 : 12}
           lg={(dataAPI?.deal_of_days?.status && dataAPI?.deal_of_days?.deals?.length) || 0 ? 12 : 12}
-          className='order-lg-1 product-standard theme-plus'>
+          className='order-lg-1 product-standard theme-plus'> */}
           <Row
-            xl={3}
-            lg={(dataAPI?.deal_of_days?.status && dataAPI?.deal_of_days?.deals?.length) || 0 ? 2 : 5}
-            xxl={(dataAPI?.deal_of_days?.status && dataAPI?.deal_of_days?.deals?.length) || 0 ? 4 : 6}
+            xl={4}
+            lg={(dataAPI?.deal_of_days?.status && dataAPI?.deal_of_days?.deals?.length) || 0 ? 3 : 5}
+            xxl={(dataAPI?.deal_of_days?.status && dataAPI?.deal_of_days?.deals?.length) || 0 ? 5 : 6}
             md={(dataAPI?.deal_of_days?.status && dataAPI?.deal_of_days?.deals?.length) || 0 ? 3 : 4}
             xs={2}
             className='g-sm-4 g-3'>
@@ -37,8 +36,8 @@ const DealProduct = ({ dataAPI }) => {
               </Col>
             ))}
           </Row>
-        </Col>
-      </Row>
+        {/* </Col>
+      </Row> */}
     </WrapperComponent>
   );
 };

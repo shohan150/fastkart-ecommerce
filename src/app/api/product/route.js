@@ -1,9 +1,8 @@
-import product from './product.json'
 import { NextResponse } from "next/server";
+import product from './product.json';
 
 export async function GET(request) {
-
-    const searchParams = request?.nextUrl?.searchParams
+    const searchParams = request?.nextUrl?.searchParams;
     const queryCategory = searchParams.get('category')
     const querySortBy = searchParams.get('sortBy')
     const querySearch = searchParams.get('search')

@@ -2,7 +2,7 @@ import CategoryContext from '@/Helper/CategoryContext';
 import { useContext, useMemo } from 'react';
 import Slider from 'react-slick';
 import { Col, Row } from 'reactstrap';
-import { romeCategoryOption } from '../../../Data/SliderSettingsData';
+import { romeCategoryOptionCopy } from '../../../Data/SliderSettingsData';
 import CustomHeading from '../Common/CustomHeading';
 import CategoryContent from './CategoryContent';
 
@@ -17,7 +17,7 @@ const ShopCategory = ({ dataAPI }) => {
       <Row>
         <Col xs={12}>
           <div className='category-slider arrow-slider'>
-            <Slider {...romeCategoryOption}>
+            <Slider {...romeCategoryOptionCopy}>
               {categoryData?.map((elem, i) => (
                 <CategoryContent elem={elem} key={i} />
               ))}

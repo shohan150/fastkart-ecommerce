@@ -15,13 +15,14 @@ import VegetableBanner from './VegetableBanner';
 
 const ProductCard = ({ dataAPI }) => {
   const { filteredProduct } = useContext(ProductIdsContext);
+
   return (
     <Col xxl={dataAPI?.main_content?.sidebar?.status ? 9 : 12} xl={dataAPI?.main_content?.sidebar?.status ? 8 : 12}>
       {dataAPI?.main_content?.section1_products?.status && dataAPI?.main_content?.section1_products?.product_ids.length > 0 && (
         <ProductSection1
           dataAPI={dataAPI?.main_content?.section1_products}
           ProductData={filteredProduct}
-          svgUrl={<LeafSVG className='icon-width' />}
+          // svgUrl={<LeafSVG className='icon-width' />}
           noCustomClass={true}
           classObj={{ productStyle: 'product-modern', productBoxClass: '' }}
         />
