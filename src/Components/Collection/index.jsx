@@ -1,22 +1,26 @@
 'use client';
+import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
+import Loader from '@/Layout/Loader';
+import { useCustomSearchParams } from '@/Utils/Hooks/useCustomSearchParams';
 import { useContext, useEffect, useState } from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
-import { useCustomSearchParams } from '@/Utils/Hooks/useCustomSearchParams';
-import LayoutSidebar from './LayoutSidebar';
-import MainCollectionSlider from './CollectionSlider';
 import CollectionBanner from './CollectionBanner';
 import CollectionLeftSidebar from './CollectionLeftSidebar';
-import CollectionOffCanvas from './CollectionOffcanvas';
-import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
-import CollectionRightSidebar from './CollectionRightSidebar';
 import CollectionNoSidebar from './CollectionNoSidebar';
-import Loader from '@/Layout/Loader';
+import CollectionOffCanvas from './CollectionOffcanvas';
+import CollectionRightSidebar from './CollectionRightSidebar';
+import MainCollectionSlider from './CollectionSlider';
+import LayoutSidebar from './LayoutSidebar';
 
 const CollectionContain = () => {
   const [filter, setFilter] = useState({ category: [], price: [], attribute: [], rating: [], sortBy: '', field: '' });
   const { themeOption, isLoading } = useContext(ThemeOptionContext);
   const [category, attribute, price, rating, sortBy, field, layout] = useCustomSearchParams(['category', 'attribute', 'price', 'rating', 'sortBy', 'field', 'layout']);
+
   const collectionLayout = layout?.layout ? layout?.layout : themeOption?.collection?.collection_layout;
+
+  //collectionLayout = collection_banner
+  
   useEffect(() => {
     setFilter((prev) => {
       return {

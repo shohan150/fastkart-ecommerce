@@ -148,7 +148,7 @@
       "pinterest": "https://pinterest.com/"
     },
     "collection": {
-      "collection_layout": "collection_category_slider",
+      "collection_layout": "collection_banner",
       "collection_banner_image_url": "https://react.pixelstrap.net/fastkart/assets/banner.png"
     },
     "product": {
