@@ -1,18 +1,18 @@
-import { useContext, useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import { AccordionHeader, AccordionItem, UncontrolledAccordion } from 'reactstrap';
-import CollectionCategory from './CollectionCategory';
+import { useTranslation } from '@/app/i18n/client';
+import CollectionSidebarSkeleton from '@/Components/Common/SkeletonLoader/CollectionSidebarSkeleton';
+import I18NextContext from '@/Helper/I18NextContext';
+import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
 import request from '@/Utils/AxiosUtils';
 import { AttributesAPI } from '@/Utils/AxiosUtils/API';
+import { useQuery } from '@tanstack/react-query';
+import { useContext, useState } from 'react';
+import { RiCloseFill } from 'react-icons/ri';
+import { AccordionHeader, AccordionItem, UncontrolledAccordion } from 'reactstrap';
 import CollectionAttributes from './CollectionAttributes';
+import CollectionCategory from './CollectionCategory';
 import CollectionFilter from './CollectionFilter';
 import CollectionPrice from './CollectionPrice';
 import CollectionRating from './CollectionRating';
-import I18NextContext from '@/Helper/I18NextContext';
-import { useTranslation } from '@/app/i18n/client';
-import ThemeOptionContext from '@/Helper/ThemeOptionsContext';
-import { RiCloseFill } from 'react-icons/ri';
-import CollectionSidebarSkeleton from '@/Components/Common/SkeletonLoader/CollectionSidebarSkeleton';
 
 const CollectionSidebar = ({ filter, setFilter, isOffcanvas, basicStoreCard, rightSideClass, sellerClass, isAttributes = true }) => {
   const { i18Lang } = useContext(I18NextContext);

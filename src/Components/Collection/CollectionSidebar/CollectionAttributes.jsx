@@ -1,6 +1,6 @@
+import { useCustomSearchParams } from '@/Utils/Hooks/useCustomSearchParams';
 import { usePathname, useRouter } from 'next/navigation';
 import { AccordionBody, AccordionHeader, AccordionItem, Input, Label } from 'reactstrap';
-import { useCustomSearchParams } from '@/Utils/Hooks/useCustomSearchParams';
 
 const CollectionAttributes = ({ attributeAPIData, filter, setFilter }) => {
   const router = useRouter();
@@ -33,6 +33,7 @@ const CollectionAttributes = ({ attributeAPIData, filter, setFilter }) => {
       router.push(`${pathname}?${queryParams}`);
     }
   };
+  
   return (
     <>
       {attributeAPIData?.length > 0 &&
