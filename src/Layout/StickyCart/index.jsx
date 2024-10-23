@@ -1,13 +1,13 @@
-import { useContext, useEffect, useState } from 'react';
-import Btn from '@/Elements/Buttons/Btn';
-import { RiCloseLine, RiShoppingBasketLine } from 'react-icons/ri';
-import CartContext from '@/Helper/CartContext';
-import Avatar from '@/Components/Common/Avatar';
-import { placeHolderImage } from '../../../Data/CommonPath';
 import { useTranslation } from '@/app/i18n/client';
+import Avatar from '@/Components/Common/Avatar';
+import Btn from '@/Elements/Buttons/Btn';
+import CartContext from '@/Helper/CartContext';
 import I18NextContext from '@/Helper/I18NextContext';
-import Link from 'next/link';
 import SettingContext from '@/Helper/SettingContext';
+import Link from 'next/link';
+import { useContext, useEffect, useState } from 'react';
+import { RiCloseLine, RiShoppingBasketLine } from 'react-icons/ri';
+import { placeHolderImage } from '../../../Data/CommonPath';
 
 const StickyCart = () => {
   const { cartProducts, getTotal } = useContext(CartContext);
@@ -15,6 +15,7 @@ const StickyCart = () => {
   const { i18Lang } = useContext(I18NextContext);
   const { t } = useTranslation(i18Lang, 'common');
   const [openCart, setOpenCart] = useState(true);
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpenCart(false);
