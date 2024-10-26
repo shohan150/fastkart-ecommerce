@@ -671,7 +671,7 @@ header {
             }
 
             .form-control {
-              width: 800px;
+              width: 600px;
               border-radius: 5px 0 0 5px;
               color: $title-color;
               border-color: $border-color;
@@ -681,11 +681,11 @@ header {
               }
 
               @media (max-width: 1812px) {
-                width: 600px;
+                width: 450px;
               }
 
               @media (max-width: 1350px) {
-                width: 466px;
+                width: 360px;
               }
             }
 

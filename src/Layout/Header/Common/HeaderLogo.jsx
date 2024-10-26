@@ -11,6 +11,7 @@ import TokyoLogo from '../../../../public/assets/images/logo/2.png';
 import RomeLogo from '../../../../public/assets/images/logo/3.png';
 import MadridLogo from '../../../../public/assets/images/logo/4.png';
 import OtherLogo from '../../../../public/assets/images/logo/6.png';
+import HeaderCategorySingle from './HeaderCategorySingle';
 
 const HeaderLogo = () => {
   const [logo, setLogo] = useState('');
@@ -36,16 +37,18 @@ const HeaderLogo = () => {
     setLogo(logo);
   }, [pathName, i18Lang, themeOption?.logo?.header_logo]);
   return (
-    <>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
       {/* <Btn className='navbar-toggler d-xl-none d-inline navbar-menu-button me-2' type='button'>
         <span className='navbar-toggler-icon' onClick={() => setMobileSideBar(!mobileSideBar)}>
           <RiMenuLine />
         </span>
       </Btn> */}
+
+      <HeaderCategorySingle />
       <Link href='/' className='web-logo nav-logo'>
         <Avatar data={logo} placeHolder={logoImage} name={'Header'} customImageClass={'img-fluid'} height={28} width={162} />
       </Link>
-    </>
+    </div>
   );
 };
 

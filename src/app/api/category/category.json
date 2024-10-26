@@ -1345,6 +1345,99 @@
       },
       "subcategories": [],
       "parent": null
+    },
+    {
+      "id": 50,
+      "name": "Smartphone",
+      "slug": "smartphone",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/free/png-512/free-mobile-icon-download-in-svg-png-gif-file-formats--smartphone-phone-device-saas-icons-pack-miscellaneous-902096.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 51,
+      "name": "Laptop",
+      "slug": "laptop",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/laptop-2382554-2013068.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 52,
+      "name": "Television",
+      "slug": "television",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/tv-31-87775.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 53,
+      "name": "Washing Machine",
+      "slug": "washing-machine",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/washing-machine-1852135-1569906.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 54,
+      "name": "Refrigerator",
+      "slug": "refrigerator",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/fridge-2-81088.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 55,
+      "name": "Air Conditioner",
+      "slug": "air-conditioner",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/ac-1614144-1369047.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 56,
+      "name": "Smart Watch",
+      "slug": "smart-watch",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/smart-watch-2919291-2437250.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 57,
+      "name": "Charger & Cable",
+      "slug": "charger-cable",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/mobile-charger-4364364-3636169.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 58,
+      "name": "Camera",
+      "slug": "camera",
+      "type": "product",
+      "category_icon": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-1429519-1210072.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 59,
+      "name": "Network Devices",
+      "slug": "network-devices",
+      "type": "product"
+    },
+    {
+      "id": 60,
+      "name": "Headphones",
+      "slug": "headphones",
+      "type": "product"
     }
   ],
   "total": 20

@@ -43,6 +43,10 @@ module.exports = (phase) => {
                 protocol: "https",
                 hostname: "react.pixelstrap.net",
             },
+            {
+                protocol: "https",
+                hostname: "cdn.iconscout.com",
+            },
         ],
     }
 
