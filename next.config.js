@@ -24,7 +24,7 @@ module.exports = (phase) => {
         API_BASE_URL: "http://localhost:3000/api",
     }
 
-    //returns an array of redirect rules.specifies a permanent redirect from the root URL (/) to /en/theme/osaka.
+    //returns an array of redirect rules.specifies a permanent redirect from the root URL (/) to /en/home.
     const redirects = () => {
         return [
             {
