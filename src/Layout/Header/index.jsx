@@ -24,7 +24,7 @@ const MainHeader = () => {
   const showHeader = useMemo(() => {
     return headerOptionsMap[currentPath] || themeOption?.header?.header_options;
   }, [pathName, themeOption?.header?.header_options]);
-  return headerList[showHeader] || <BasicHeader />;
+  return headerList[showHeader] || <FastkartHeader />;
 };
 
 export default MainHeader;

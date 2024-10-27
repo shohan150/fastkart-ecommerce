@@ -1415,7 +1415,7 @@
       "slug": "charger-cable",
       "type": "product",
       "category_icon": {
-        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/mobile-charger-4364364-3636169.png?f=webp&w=256"
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/tracking-app-ev-charger-9179369-7489911.png?f=webp&w=256"
       }
     },
     {
@@ -1438,6 +1438,86 @@
       "name": "Headphones",
       "slug": "headphones",
       "type": "product"
+    },
+    {
+      "id": 100,
+      "name": "Singer",
+      "slug": "singer",
+      "products_count": 21,
+      "type": "product",
+      "category_image": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-1429519-1210072.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 101,
+      "name": "LG",
+      "slug": "lg",
+      "products_count": 12,
+      "type": "product",
+      "category_image": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-1429519-1210072.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 102,
+      "name": "Walton",
+      "slug": "walton",
+      "products_count": 17,
+      "type": "product",
+      "category_image": {
+        "original_url": "/assets/img/brands/walton.png"
+      }
+    },
+    {
+      "id": 103,
+      "name": "Samsung",
+      "slug": "samsung",
+      "products_count": 35,
+      "type": "product",
+      "category_image": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-1429519-1210072.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 104,
+      "name": "Parasonic",
+      "slug": "parasonic",
+      "products_count": 5,
+      "type": "product",
+      "category_image": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-1429519-1210072.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 105,
+      "name": "Butterfly",
+      "slug": "butterfly",
+      "products_count": 8,
+      "type": "product",
+      "category_image": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-1429519-1210072.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 106,
+      "name": "Sony",
+      "slug": "sony",
+      "products_count": 40,
+      "type": "product",
+      "category_image": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-1429519-1210072.png?f=webp&w=256"
+      }
+    },
+    {
+      "id": 107,
+      "name": "Xiaomi",
+      "slug": "xiaomi",
+      "products_count": 32,
+      "type": "product",
+      "category_image": {
+        "original_url": "https://cdn.iconscout.com/icon/premium/png-512-thumb/camera-1429519-1210072.png?f=webp&w=256"
+      }
     }
   ],
   "total": 20

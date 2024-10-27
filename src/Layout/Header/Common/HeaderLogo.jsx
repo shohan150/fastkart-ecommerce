@@ -45,6 +45,7 @@ const HeaderLogo = () => {
       </Btn> */}
 
       <HeaderCategorySingle />
+      
       <Link href='/' className='web-logo nav-logo'>
         <Avatar data={logo} placeHolder={logoImage} name={'Header'} customImageClass={'img-fluid'} height={28} width={162} />
       </Link>
