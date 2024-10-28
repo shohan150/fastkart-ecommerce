@@ -19,8 +19,8 @@ const MiddleContent = ({ dataAPI }) => {
         </WrapperComponent>
       )}
 
-            {/* shop by brands (madrid) */}
-            {dataAPI?.categories_image_list?.status && <BrandCategory dataAPI={dataAPI?.categories_image_list} />}
+      {/* shop by brands (madrid) */}
+      {dataAPI?.categories_image_list?.status && <BrandCategory dataAPI={dataAPI?.categories_image_list} />}
 
       {dataAPI?.product_bundles?.status && dataAPI?.product_bundles?.bundles?.length > 0 && (
         <WrapperComponent noRowCol={true}>

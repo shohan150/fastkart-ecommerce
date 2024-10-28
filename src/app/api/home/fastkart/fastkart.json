@@ -106,8 +106,8 @@
       "bundles": [
         {
           "title": "Hot Deals on New Items",
-          "sub_title": "Daily Essentials Eggs & Dairy",
-          "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/osaka/6.jpg",
+          "sub_title": "Electronic Items on Go",
+          "image_url": "https://img.freepik.com/free-vector/electronics-store-template-design_23-2151143839.jpg?semt=ais_hybrid",
           "redirect_link": {
             "link": "http://localhost:4200/theme/osaka",
             "link_type": "external_url",
@@ -118,7 +118,7 @@
         {
           "title": "Organic Meat Prepared",
           "sub_title": "Delivered to Your Home",
-          "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/osaka/6.jpg",
+          "image_url": "https://img.freepik.com/free-psd/black-friday-super-sale-web-banner-template_120329-3862.jpg",
           "redirect_link": {
             "link": null,
             "link_type": null,
@@ -128,8 +128,8 @@
         },
         {
           "title": "Buy More & Save More",
-          "sub_title": "Fresh Vegetables & Fruits",
-          "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/osaka/6.jpg",
+          "sub_title": "Super Deal on Gadgets",
+          "image_url": "https://img.freepik.com/premium-vector/home-appliances-product-design-electronic-sale_1159911-883.jpg?semt=ais_hybrid",
           "redirect_link": {
             "link": null,
             "link_type": null,
@@ -139,8 +139,8 @@
         },
         {
           "title": "Fresh Fruits on Go",
-          "sub_title": "Fresh Vegetables & Fruits",
-          "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/osaka/6.jpg",
+          "sub_title": "Get Quality Products",
+          "image_url": "https://img.freepik.com/premium-vector/home-appliances-product-design_1164355-520.jpg?w=360",
           "redirect_link": {
             "link": null,
             "link_type": null,
@@ -213,13 +213,13 @@
         "status": true,
         "categories_icon_list": {
           "title": "Popular Categories",
-          "category_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+          "category_ids": [51, 52, 53, 54, 55, 56, 57, 58, 59, 60],
           "status": true
         },
         "left_side_banners": {
           "status": true,
           "banner_1": {
-            "image_url": "https://react.pixelstrap.net/fastkart/assets/themes/paris/4.jpg",
+            "image_url": "https://img.freepik.com/free-psd/3d-vertical-background-shopping-with-podium_23-2150467207.jpg",
             "redirect_link": {
               "link": "vegetables-fruits",
               "link_type": "collection"
