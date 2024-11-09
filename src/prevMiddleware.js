@@ -71,8 +71,7 @@ export async function middleware(request) {
 }
 
 // The config object specifies that this middleware should apply to all paths except for API routes, static files, images, and the favicon.
-//additionally matches URLs that start with /assets or /images. This means the middleware will also be applied to requests for assets and images. applies to all routes except the exclusions /api, /_next/static, /_next/image, or are the favicon.ico file and also includes routes starting with /assets and /images.
-//need to be incestigated exactly what is going on here and what are there these routes actually. 
+// matches all routes except those that start with /api, /_next/static, /_next/image, or are the favicon.ico file. In simpler terms, it applies the middleware to all routes except Next.js's internal routes and API routes.
 export const config = {
-    matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)|/assets|/images'],
+    matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };
